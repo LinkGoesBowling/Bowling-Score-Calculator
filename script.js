@@ -29,7 +29,7 @@ let twoShotsAgo = 0;
 let doubleStrike = false;
 let strikeFollowedByPinCount = false;
 
-function addPins(count){
+function addPins(count){ //An extra pin is added on a spare after an open frame
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
 		if (previousShot === 10 - count){
 			addSpare();
@@ -43,15 +43,13 @@ function addPins(count){
 			shot++;
 			console.log("Frame: " + (Math.floor(shot / 2 + 0.5)));
 			previousShot = count;
-			if (previousShot === "spare"){
-				score += count * 2
-			}
-			if (previousShot !== "spare" && twoShotsAgo !== 10) {
+			if (twoShotsAgo !== 10) {
 				score += count
 			}
 			if (twoShotsAgo === 10){
 			score += count * 2;
 		}
+		strikeFollowedByPinCount = false;
 		}
 	}
 	else if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17){
@@ -67,6 +65,7 @@ function addPins(count){
 		}
 		if (doubleStrike === true){
 			score += count * 2;
+			doubleStrike = false;
 		}
 		else {
 			score += count;
@@ -74,6 +73,9 @@ function addPins(count){
 		
 		if (previousShot === 10){
 			twoShotsAgo = 10;
+		}
+		if (previousShot !== 10){
+			twoShotsAgo = 0;
 		}
 		previousShot = count;
 	}
