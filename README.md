@@ -1,1 +1,5 @@
 # Bowling-Scores-App
+This is an incomplete project of a bowling scores app, written by just me, with no assistance from other programmers or AI. No new help forums were created to help me with this project, but I used existing forums to help me.
+This project is really just to display my programming skills, it's not really built for public use, but you can use it that way if you want I guess.
+I am currently working on calculating the score based on all the shots. The hardest part so far has been doubling scores based on strikes and spares. I had a lot of occurences where I was doubling scores twice, which is not what I want because it makes the scores higher. It's definitely been tricky with all the double strikes having to double the next two shots and stuff like that.
+Right now, scores just get logged to the console after every frame, and the 10th frame has not been programmed yet. Future versions will include a completely working scorecard, some stats, the frame-by-frame score will show up on the actual user interface rather than just the console, and it will have some CSS to make it look good.
