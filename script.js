@@ -28,8 +28,10 @@ let previousShot = 0;
 let twoShotsAgo = 0;
 let doubleStrike = false;
 let strikeFollowedByPinCount = false;
+let isTenthFrame = false;
+let strikeButtonPressed = false;
 
-function addPins(count){ //An extra pin is added on a spare after an open frame
+function addPins(count){
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
 		if (previousShot === 10 - count){
 			addSpare();
@@ -155,6 +157,7 @@ function addPins(count){ //An extra pin is added on a spare after an open frame
 	console.log("Score: " + score);
 }
 function addStrike(){
+	strikeButtonPressed = true;
 	if (previousShot !== 10){
 		doubleStrike = false;
 	}
@@ -197,6 +200,7 @@ function addStrike(){
 		doubleStrike = true;
 	}
 	previousShot = 10;
+	strikeButtonPressed = false;
 }
 function addSpare(){
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
@@ -222,9 +226,12 @@ function addSpare(){
 	else {
 		tenthFrame();
 	}
+	
 	console.log("Score: " + score);
+	console.log(shot);
 }
 function tenthFrame(shots){
+	isTenthFrame = true;
 	if (shot === 19){
 		if (doubleStrike === false && previousShot !== 10){
 			score += shots;
@@ -236,21 +243,24 @@ function tenthFrame(shots){
 		if (doubleStrike === true){
 			score += shots * 3;
 			previousShot = shots;
+			twoShotsAgo = 10;
 			if (shots === 10){
 				shot++;
 			}
 			shot++;
 		}
-		if (doubleStrike === false && previousShot === 10){
+		if (doubleStrike === false && previousShot === 10 && previousShot !== "spare"){
 			score += shots * 2;
 			previousShot = shots;
+			twoShotsAgo = 10;
 			if (shots === 10){
+				console.log("STRIIIIIIIKE!!!");
 				shot++;
 			}
 			shot++;
 		}
 		if (previousShot === "spare" && doubleStrike === false){
-			score += shots * 2;
+			score += shots;
 			previousShot = shots;
 			if (shots === 10){
 				shot++;
@@ -259,14 +269,23 @@ function tenthFrame(shots){
 		}
 	}
 	if (shot === 20){
-		if (previousShot === 10){
-			
-		}
 		if (previousShot !== 10){
 			if (previousShot > 10 - shots){
 				console.log("You can't hit more than 10 pins in a frame!");
 				console.log(shot);
 			}
+			if (shots === 10){
+				console.log("STRIIIIIIIKE!!!");
+				shot++;
+			}
+			else {
+				score += 10 - previousShot
+			}
 		}
+		if (twoShotsAgo === 10){
+			score += (10 - previousShot) * 2;
+		}
+		shot++;
+		console.log("shot");
 	}
 }
