@@ -14,14 +14,15 @@ button {
   margin-right: auto;
 }
 body {
-  background-image: url("https://imgs.search.brave.com/_P3shNxtjKoDh0w9m_vQwHJBXRHnY2XuP4NsUbuaJyU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzU3Lzcw/LzMxLzU3NzAzMTkw/MTlmMDY5MzdmMDFi/ODQ0ZDNiOTE1YzFk/LmpwZw"); /* Credit: dreamstime */
+  background-image: url("bowlingPinsBackground.png");
   margin: auto;
-}
-li{
-  list-style-type: none;
-  float:left;
-  background:white; border:2px #000 solid;
 }
 .buttons {
   text-align: center;
+}
+img {
+  padding: inherit;
+  margin:auto;
+  width: 200px;
+  display: block;
 }
