@@ -198,9 +198,11 @@ function addStrike(){
 	}
 	if (shot === 22){
 		console.log("Shot 22")
+		if (strikeButtonPressed === true){
 		if (previousShot === 10 || shot21Count === "spare"){
 		score += 10;
 		endGame();
+		}
 		}
 		else if (previousShot !== 10 || shot21Count !== "spare") {
 			console.log("That's not a strike situation! Use the spare button instead.");
