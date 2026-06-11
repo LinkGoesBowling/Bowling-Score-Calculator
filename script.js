@@ -37,7 +37,7 @@ let sum = 0;
 let shot21Completed = false;
 
 function addPins(count){
-	if (shot === 22){
+	if (shot === 22 && shot21Completed === true){
 		console.log("Shot 22");
 		score += count - 10;
 		shot22Count = count;
@@ -196,7 +196,7 @@ function addStrike(){
 	if (previousShot === 10){
 		doubleStrike = true;
 	}
-	if (shot === 22){
+	if (shot === 22 && shot21Completed === true){
 		console.log("Shot 22");
 		if (strikeButtonPressed === true){
 		if (previousShot === 10 || shot21Count === "spare"){
@@ -239,7 +239,7 @@ function addSpare(){
 		tenthFrame(10 - shot20Count);
 		shot21Count = "spare";
 	}
-	else if (shot === 22) {
+	else if (shot === 22 && shot21Completed === true) {
 		console.log("Shot 22");
 		if (shot21Count === 10){
 			console.log("Not a spare situation");
