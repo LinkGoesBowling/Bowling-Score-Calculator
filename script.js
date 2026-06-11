@@ -287,6 +287,7 @@ function tenthFrame(shots){
 			console.log("Score: " + score);
 			shot21Count = shots;
 			shot++;
+			return;
 		}
 		if (doubleStrike === false && shot20Count === 10 || previousShot === "spare"){
 			score += shots;
