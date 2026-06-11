@@ -197,7 +197,7 @@ function addStrike(){
 		doubleStrike = true;
 	}
 	if (shot === 22){
-		console.log("Shot 22")
+		console.log("Shot 22");
 		if (strikeButtonPressed === true){
 		if (previousShot === 10 || shot21Count === "spare"){
 		score += 10;
@@ -238,12 +238,11 @@ function addSpare(){
 	else if (shot === 21) {
 		tenthFrame(10 - shot20Count);
 		shot21Count = "spare";
-		console.log("shot21Count was set to spare")
 	}
 	else if (shot === 22) {
 		console.log("Shot 22");
 		if (shot21Count === 10){
-			console.log("Not a spare situation")
+			console.log("Not a spare situation");
 		}
 		if (shot21Count !== 10) {
 			score += (10 - shot21Count);
@@ -344,6 +343,7 @@ function tenthFrame(shots){
 		}
 	}
 	shot21Completed = true;
+	return;
 	}
 }
 //end of score calculator
