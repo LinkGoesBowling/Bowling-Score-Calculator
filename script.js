@@ -342,7 +342,7 @@ function tenthFrame(shots){
 		}
 	}
 	shot21Completed = true;
-	break;
+	return;
 	}
 }
 //end of score calculator
