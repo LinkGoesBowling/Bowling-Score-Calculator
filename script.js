@@ -206,11 +206,10 @@ function addStrike(){
 		else if (previousShot !== 10 || shot21Count !== "spare") {
 			console.log("That's not a strike situation! Use the spare button instead.");
 		}
-	}
 	console.log("Score: " + score);
 	previousShot = 10;
 	strikeButtonPressed = false;
-}
+	}
 function addSpare(){
 	spareButtonPressed = true;
 	spareButtonPressed = false;
