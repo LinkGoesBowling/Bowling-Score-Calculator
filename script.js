@@ -97,8 +97,10 @@ function addPins(count){
 		previousShot = count;
 	}
 	else if (shot === 22){
-		console.log("Shot 22 executed");
-		score += count;
+		if (previousShot === 10 || previousShot !== 10){
+			console.log("Shot 22 executed");
+			score += count;
+		}
 	}
 	if (shot === 1){
 		shot1Count = count;
