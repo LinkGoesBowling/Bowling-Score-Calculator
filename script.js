@@ -243,7 +243,13 @@ function addSpare(){
 	console.log("Score: " + score);
 	console.log(shot);
 	if (shot === 22){
-		endGame();
+		if (shot21Count === 10){
+			console.log("That's not a spare situation!");
+		}
+		else {
+			score += 10 - shot21Count;
+			endGame();
+		}
 	}
 }
 function tenthFrame(shots){
