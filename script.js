@@ -199,7 +199,7 @@ function addStrike(){
 	}
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){
-			console.log("Shot 22);
+			console.log("Shot 22");
 			score += 10;
 		}
 	}
