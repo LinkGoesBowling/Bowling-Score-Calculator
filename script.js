@@ -350,3 +350,4 @@ function endGame(){
 	shot = 1;
 	score = 0;
 }
+}
