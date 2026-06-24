@@ -42,6 +42,7 @@ function addPins(count){
 			console.log("Shot 22 executed");
 			score += count;
 			endGame();
+			return;
 		}
 	}
 		if (shot === 19 || shot === 20 || shot === 21){
