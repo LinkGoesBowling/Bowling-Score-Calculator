@@ -250,13 +250,13 @@ function addSpare(){
 	}
 	if (shot === 21) {
 		console.log("addSpare was executed");
+		console.log("shot20Count: " + shot20Count);
 		if (previousShot === 10){
-			console.log("shot20Count: " + shot20Count);
 			score += (10 - shot20Count) * 2;
 			shot21Count = "spare";
 		}
 		else {
-			score += 10 - shot21Count;
+			score += 10 - shot20Count;
 			shot21Count = "spare";
 		}
 	}
