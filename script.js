@@ -246,8 +246,14 @@ function addSpare(){
 		console.log("That's the first shot of the frame!");
 	}
 	else if (shot === 21) {
-		tenthFrame(10 - shot20Count);
-		shot21Count = "spare";
+		if (previousShot === 10){
+			tenthFrame((10 - shot20Count) * 2);
+			shot21Count = "spare";
+		}
+		else {
+			tenthFrame(10-shot21Count);
+			shot21Count = "spare";
+		}
 	}
 	console.log("Score: " + score);
 	console.log(shot);
