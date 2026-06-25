@@ -247,7 +247,7 @@ function addSpare(){
 	}
 	else if (shot === 21) {
 		if (previousShot === 10){
-			tenthFrame((10 - shot20Count) * 2);
+			score += (10 - shot20Count) * 2;
 			shot21Count = "spare";
 		}
 		else {
