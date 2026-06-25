@@ -38,7 +38,7 @@ let shot21Completed = false;
 
 function addPins(count){
 	if (shot === 22 && shot21Completed === true){
-		if (previousShot === 10 || previousShot !== 10){
+		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
 			console.log("Shot 22 executed");
 			score += count;
 			endGame();
