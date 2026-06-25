@@ -48,6 +48,9 @@ function addPins(count){
 		if (shot === 19 || shot === 20 || shot === 21){
 			tenthFrame(count);
 		}
+	if (shot === 20){
+		shot20Count = count;
+	}
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
 		if (previousShot === 10 - count){
 			addSpare();
