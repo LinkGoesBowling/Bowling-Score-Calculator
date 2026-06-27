@@ -372,6 +372,7 @@ function endGame(){
 	if (shot === 23) {
 		console.log("Final score: " + score);
 		allGames.push(score);
+		calculateAverage();
 	}
 }
 function restartGame(){
@@ -409,4 +410,11 @@ function restartGame(){
   		spareButtonPressed = false;
   		shot20Completed = false;
   		shot21Completed = false;
+}
+function calculateAverage(){
+	for (let i = 0; i < allGames.length; i++){
+		sum += allGames[i];
+	}
+	let average = sum / allGames.length;
+	console.log("Average: " + average);
 }
