@@ -372,6 +372,7 @@ function endGame(){
 		console.log("Final score: " + score);
 		allGames.push(score);
 		calculateAverage();
+		shot++;
 	}
 }
 function restartGame(){
@@ -410,7 +411,7 @@ function restartGame(){
   		shot20Completed = false;
   		shot21Completed = false;
 }
-function calculateAverage(){
+function calculateAverage(){ //pushing buttons after game is done logs that game again
 	let pinfallTotal = 0;
 	for (let i = 0; i < allGames.length; i++){
 		pinfallTotal += allGames[i];
