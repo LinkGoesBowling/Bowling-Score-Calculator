@@ -34,7 +34,7 @@ let spareButtonPressed = false;
 let shot20Completed = false;
 let allGames = [];
 let shot21Completed = false;
-
+const getGamesFromLocalStorage = localStorage.getItem('allGames');
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
@@ -381,6 +381,7 @@ function endGame(){
 	if (shot === 23) {
 		console.log("Final score: " + score);
 		allGames.push(score);
+		localStorage.setItem('allGames', allGames);
 		calculateAverage();
 		shot++;
 		console.log("Press Restart Game to log a new game");
