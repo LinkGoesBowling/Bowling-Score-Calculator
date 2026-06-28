@@ -509,3 +509,7 @@ function calculateAverage(){
 	console.log("Games: " + allGames.length);
 	console.log("pinfallTotal: " + pinfallTotal);
 }
+function hideFrameNumbers(){ // for development purposes
+	let frameNumbers = document.getElementById("buttons");
+	frameNumbers.textContent("");
+}
