@@ -35,27 +35,6 @@ let shot20Completed = false;
 let allGames = [];
 let shot21Completed = false;
 const getGamesFromLocalStorage = localStorage.getItem('allGames');
-var changeShot1 = document.getElementById("shot1");
-var changeShot2 = document.getElementById("shot2");
-var changeShot3 = document.getElementById("shot3");
-var changeShot4 = document.getElementById("shot4");
-var changeShot5 = document.getElementById("shot5");
-var changeShot6 = document.getElementById("shot6");
-var changeShot7 = document.getElementById("shot7");
-var changeShot8 = document.getElementById("shot8");
-var changeShot9 = document.getElementById("shot9");
-var changeShot10 = document.getElementById("shot10");
-var changeShot11 = document.getElementById("shot11");
-var changeShot12 = document.getElementById("shot12");
-var changeShot13 = document.getElementById("shot13");
-var changeShot14 = document.getElementById("shot14");
-var changeShot15 = document.getElementById("shot15");
-var changeShot16 = document.getElementById("shot16");
-var changeShot17 = document.getElementById("shot17");
-var changeShot18 = document.getElementById("shot18");
-var changeShot20 = document.getElementById("shot20");
-var changeShot21 = document.getElementById("shot21");
-var changeShot22 = document.getElementById("shot22");
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
@@ -68,58 +47,93 @@ function addPins(count){
 	}
 	if (shot === 1){
 		shot1Count = count;
+		let changeShot1 = document.getElementById("shot1");
 		changeShot1.textContent = shot1Count;
 	}
 	if (shot === 2){
 		shot2Count = count;
+		let changeShot2 = document.getElementById("shot2");
+		changeShot2.textContent = shot2Count;
 	}
 	if (shot === 3){
 		shot3Count = count;
+		let changeShot3 = document.getElementById("shot3");
+		changeShot3.textContent = shot3Count;
 	}
 	if (shot === 4){
 		shot4Count = count;
+		let changeShot4 = document.getElementById("shot4");
+		changeShot4.textContent = shot4Count;
 	}
 	if (shot === 5){
 		shot5Count = count;
+		let changeShot5 = document.getElementById("shot5");
+		changeShot5.textContent = shot5Count;
 	}
 	if (shot === 6){
 		shot6Count = count;
+		let changeShot6 = document.getElementById("shot6");
+		changeShot6.textContent = shot6Count;
 	}
 	if (shot === 7){
 		shot7Count = count;
+		let changeShot7 = document.getElementById("shot7");
+		changeShot7.textContent = shot7Count;
 	}
 	if (shot === 8){
 		shot8Count = count;
+		let changeShot8 = document.getElementById("shot8");
+		changeShot8.textContent = shot8Count;
 	}
 	if (shot === 9){
 		shot9Count = count;
+		let changeShot9 = document.getElementById("shot9");
+		changeShot9.textContent = shot9Count;
 	}
 	if(shot === 10){
 		shot10Count = count;
+		let changeShot10 = document.getElementById("shot10");
+		changeShot10.textContent = shot10Count;
 	}
 	if (shot === 11){
 		shot11Count = count;
+		let changeShot11 = document.getElementById("shot11");
+		changeShot11.textContent = shot11Count;
 	}
 	if (shot === 12) {
 		shot12Count = count;
+		let changeShot12 = document.getElementById("shot12");
+		changeShot12.textContent = shot12Count;
 	}
 	if (shot === 13){
 		shot13Count = count;
+		let changeShot13 = document.getElementById("shot13");
+		changeShot13.textContent = shot13Count;
 	}
 	if (shot === 14){
 		shot14Count = count;
+		let changeShot14 = document.getElementById("shot14");
+		changeShot14.textContent = shot14Count;
 	}
 	if (shot === 15){
 		shot15Count = count;
+		let changeShot15 = document.getElementById("shot15");
+		changeShot15.textContent = shot15Count;
 	}
 	if (shot === 16){
 		shot16Count = count;
+		let changeShot16 = document.getElementById("shot16");
+		changeShot16.textContent = shot16Count;
 	}
 	if (shot === 17){
 		shot17Count = count;
+		let changeShot17 = document.getElementById("shot17");
+		changeShot17.textContent = shot17Count;
 	}
 	if (shot === 18){
 		shot18Count = count;
+		let changeShot18 = document.getElementById("shot18");
+		changeShot18.textContent = shot18Count;
 	}
 		if (shot === 19 || shot === 20 || shot === 21){
 			tenthFrame(count);
