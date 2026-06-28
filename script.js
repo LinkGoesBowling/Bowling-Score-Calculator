@@ -124,6 +124,7 @@ function addPins(count){
 	}
 	if (shot === 1){
 		shot1Count = count;
+		changeShot1.textContent = count;
 	}
 	if (shot === 2){
 		shot2Count = count;
