@@ -208,8 +208,44 @@ function addStrike(){
 			endGame();
 			return;
 		}
-		const element = document.getElementById("score");
-		element.textContent = score;
+		const changeScore = document.getElementById("score");
+		changeScore.textContent = score;
+	}
+		if (shot === 1){
+		let changeShot2 = document.getElementById("shot2");
+		changeShot2.textContent = "X";
+	}
+	if (shot === 3){
+		let changeShot4 = document.getElementById("shot4");
+		changeShot4.textContent = "X";
+	}
+	if (shot === 5){
+		let changeShot6 = document.getElementById("shot6");
+		changeShot6.textContent = "X";
+	}
+	if (shot === 7){
+		let changeShot8 = document.getElementById("shot8");
+		changeShot8.textContent = "X";
+	}
+	if (shot === 9){
+		let changeShot10 = document.getElementById("shot10");
+		changeShot10.textContent = "X";
+	}
+	if (shot === 11){
+		let changeShot12 = document.getElementById("shot12");
+		changeShot12.textContent = "X";
+	}
+	if (shot === 13){
+		let changeShot14 = document.getElementById("shot14");
+		changeShot14.textContent = "X";
+	}
+	if (shot === 15){
+		let changeShot16 = document.getElementById("shot16");
+		changeShot16.textContent = "X";
+	}
+	if (shot === 17){
+		let changeShot18 = document.getElementById("shot18");
+		changeShot18.textContent = "X";
 	}
 	strikeButtonPressed = true;
 	if (shot === 19 || shot === 20 || shot === 21){
