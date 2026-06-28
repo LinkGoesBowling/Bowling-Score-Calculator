@@ -1,5 +1,6 @@
 console.log("Programmed by Link Kelly (LinkGoesBowling)");
 //start of score calculator
+//continue at line 349
 let shot1Count = undefined;
 let shot2Count = undefined;
 let shot3Count = undefined;
@@ -211,9 +212,9 @@ function addStrike(){
 		const changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 	}
-		if (shot === 1){
-		let changeShot2 = document.getElementById("shot2");
-		changeShot2.textContent = "X";
+	if (shot === 1){
+	let changeShot2 = document.getElementById("shot2");
+	changeShot2.textContent = "X";
 	}
 	if (shot === 3){
 		let changeShot4 = document.getElementById("shot4");
@@ -246,6 +247,18 @@ function addStrike(){
 	if (shot === 17){
 		let changeShot18 = document.getElementById("shot18");
 		changeShot18.textContent = "X";
+	}
+	if (shot === 20){
+		let changeShot20 = document.getElementById("shot20");
+		changeShot20.textContent = "X";
+	}
+	if (shot === 21 && shot20Count === 10){
+		let changeShot21 = document.getElementById("shot21");
+		changeShot21.textContent = "X";
+	}
+	if (shot === 22){
+		let changeShot18 = document.getElementById("shot22");
+		changeShot22.textContent = "X";
 	}
 	strikeButtonPressed = true;
 	if (shot === 19 || shot === 20 || shot === 21){
@@ -315,21 +328,26 @@ function addSpare(){
 		}
 	}
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
-	if (strikeFollowedByPinCount === true){
-		console.log("Congrats! You got a spare.");
-		score += (10 - previousShot) * 2;
-		strikeFollowedByPinCount = false;
-		shot++;
-		twoShotsAgo = previousShot;
-		previousShot = "spare";
+		if (strikeFollowedByPinCount === true){
+			console.log("Congrats! You got a spare.");
+			score += (10 - previousShot) * 2;
+			strikeFollowedByPinCount = false;
+			shot++;
+			twoShotsAgo = previousShot;
+			previousShot = "spare";
 	}
-	else if (strikeFollowedByPinCount === false){
-	console.log("Congrats! You got a spare.");
-	shot++;
-	score += 10 - previousShot;
-	twoShotsAgo = previousShot;
-	previousShot = "spare";
+		else if (strikeFollowedByPinCount === false){
+			console.log("Congrats! You got a spare.");
+			shot++;
+			score += 10 - previousShot;
+			twoShotsAgo = previousShot;
+			previousShot = "spare";
 	}
+		if (shot === 2){
+			let changeShot2 = document.getElementById("shot2");
+			changeShot2.textContent = "/"
+		}
+		//continue here
 	}
 	else if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17 || shot === 19){
 		console.log("That's the first shot of the frame!");
