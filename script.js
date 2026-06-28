@@ -510,6 +510,6 @@ function calculateAverage(){
 	console.log("pinfallTotal: " + pinfallTotal);
 }
 function hideFrameNumbers(){ // for development purposes
-	let frameNumbers = document.getElementById("buttons");
+	let frameNumbers = document.getElementById("shots");
 	frameNumbers.textContent("");
 }
