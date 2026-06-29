@@ -257,7 +257,7 @@ function addStrike(){
 		changeShot21.textContent = "X";
 	}
 	if (shot === 22){
-		let changeShot18 = document.getElementById("shot22");
+		let changeShot22 = document.getElementById("shot22");
 		changeShot22.textContent = "X";
 	}
 	strikeButtonPressed = true;
