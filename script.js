@@ -335,14 +335,14 @@ function addSpare(){
 			shot++;
 			twoShotsAgo = previousShot;
 			previousShot = "spare";
-	}
+		}
 		else if (strikeFollowedByPinCount === false){
 			console.log("Congrats! You got a spare.");
 			shot++;
 			score += 10 - previousShot;
 			twoShotsAgo = previousShot;
 			previousShot = "spare";
-	}
+		}
 	}
 	if (shot === 2){
 			let changeShot2 = document.getElementById("shot2");
@@ -366,7 +366,7 @@ function addSpare(){
 			changeShot10.textContent = "/";
 		}
 		//continue here
-	else if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17 || shot === 19){
+	if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17 || shot === 19){
 		console.log("That's the first shot of the frame!");
 	}
 	if (shot === 21) {
