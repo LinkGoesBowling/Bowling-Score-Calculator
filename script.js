@@ -406,10 +406,17 @@ function addSpare(){
 	changeScore.textContent = score;
 }
 function tenthFrame(shots){
-	if (shot21Completed === false){
-	if (shot === 19){
-		shot++;
+	if (shot === 22 && shots === 10 && previousShot === "spare" || previousShot === 10){
+		let changeShot22 = document.getElementById("shot22");
+		changeShot22.textContent = "X";
 	}
+	if (shot === 22 && shots !== 10){
+		changeShot22.textContent = count;
+	} //continue here
+	if (shot21Completed === false){
+		if (shot === 19){
+			shot++;
+		}
 	if (shot === 20 && shot20Completed === false){
 		if (doubleStrike === true){
 			console.log("Shot 20");
@@ -545,13 +552,6 @@ function tenthFrame(shots){
 		}
 	}
 	shot21Completed = true;
-	if (shot === 22 && shots === 10 && previousShot === "spare" || previousShot === 10){
-		let changeShot22 = document.getElementById("shot22");
-		changeShot22.textContent = "X";
-	}
-	if (shot === 22 && shots !== 10){
-		changeShot22.textContent = count;
-	} //continue here
 	return;
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
