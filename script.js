@@ -1,6 +1,5 @@
 console.log("Programmed by Link Kelly (LinkGoesBowling)");
 //start of score calculator
-//continue at line 349
 let shot1Count = undefined;
 let shot2Count = undefined;
 let shot3Count = undefined;
@@ -364,7 +363,7 @@ function addSpare(){
 		else {
 			score += 10 - shot21Count;
 			shot++;
-			let changeShot22 = document.getElementById("shot2");
+			let changeShot22 = document.getElementById("shot22");
 			changeShot22.textContent = "/";
 			endGame();
 		}
