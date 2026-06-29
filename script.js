@@ -343,16 +343,16 @@ function addSpare(){
 			twoShotsAgo = previousShot;
 			previousShot = "spare";
 	}
-		if (shot === 2){
-			let changeShot2 = document.getElementById("shot2");
-			changeShot2.textContent = "/";
-			console.log("changeShot2 triggered"); //for debugging purposes
-		}
-		//continue here
 	}
 	else if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17 || shot === 20){
 		console.log("That's the first shot of the frame!");
 	}
+	if (shot === 2){
+		let changeShot2 = document.getElementById("shot2");
+		changeShot2.textContent = "/";
+		console.log("changeShot2 triggered"); //for debugging purposes
+	}
+		//continue here
 	if (shot === 21) {
 		if (previousShot === 10){
 			score += (10 - shot20Count) * 2;
