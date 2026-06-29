@@ -417,21 +417,21 @@ function tenthFrame(shots){
 			score += shots * 3;
 			shot20Count = shots;
 			let changeShot20 = document.getElementById("shot20");
-			changeShot20.textContent(shots);
+			changeShot20.textContent = shots;
 		}
 		if (doubleStrike === false && previousShot !== 10 && previousShot !== "spare"){
 			console.log("Shot 20");
 			score += shots;
 			shot20Count = shots;
 			let changeShot20 = document.getElementById("shot20");
-			changeShot20.textContent(shots);
+			changeShot20.textContent = shots;
 		}
 		if (doubleStrike === false && previousShot === 10 || previousShot === "spare"){
 			console.log("Shot 20");
 			score += shots * 2;
 			shot20Count = shots;
 			let changeShot20 = document.getElementById("shot20");
-			changeShot20.textContent(shots);
+			changeShot20.textContent = shots;
 		}
 		if (previousShot !== 10){
 			doubleStrike = false;
@@ -446,7 +446,7 @@ function tenthFrame(shots){
 			shot21Count = shots;
 			shot++;
 			let changeShot21 = document.getElementById("shot21");
-			changeShot21.textContent(shots);
+			changeShot21.textContent = shots;
 		}
 		if (doubleStrike === false && shot20Count === 10 || previousShot === "spare"){
 			score += shots;
@@ -454,7 +454,7 @@ function tenthFrame(shots){
 			shot21Count = shots;
 			shot++;
 			let changeShot21 = document.getElementById("shot21");
-			changeShot21.textContent(shots);
+			changeShot21.textContent = shots;
 			if (shots < 10 - shot20Count){
 				shot++;
 				endGame();
@@ -478,7 +478,7 @@ function tenthFrame(shots){
 					shot21Count = shots;
 					shot++;
 					let changeShot21 = document.getElementById("shot21");
-					changeShot21.textContent(shots);
+					changeShot21.textContent = shots;
 				}
 			}
 			if (shots < 10 - shot20Count){
@@ -487,14 +487,14 @@ function tenthFrame(shots){
 					console.log("Score: " + score);
 					shot21Count = shots;
 					let changeShot21 = document.getElementById("shot21");
-					changeShot21.textContent(shots);
+					changeShot21.textContent = shots;
 				}
 				if (shot17Count === 10){
 					score += shots * 2;
 					console.log("Score: " + score);
 					shot21Count = shots;
 					let changeShot21 = document.getElementById("shot21");
-					changeShot21.textContent(shots);
+					changeShot21.textContent = shots;
 				}
 				shot++;
 				endGame();
