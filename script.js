@@ -1,6 +1,6 @@
 console.log("Programmed by Link Kelly (LinkGoesBowling)");
 //start of score calculator
-//continue at line 349
+//continue at line 366
 let shot1Count = undefined;
 let shot2Count = undefined;
 let shot3Count = undefined;
@@ -345,7 +345,23 @@ function addSpare(){
 	}
 		if (shot === 2){
 			let changeShot2 = document.getElementById("shot2");
-			changeShot2.textContent = "/"
+			changeShot2.textContent = "/";
+		}
+		if (shot === 4){
+			let changeShot4 = document.getElementById("shot4");
+			changeShot4.textContent = "/";
+		}
+		if (shot === 6){
+			let changeShot6 = document.getElementById("shot6");
+			changeShot6.textContent = "/";
+		}
+		if (shot === 8){
+			let changeShot8 = document.getElementById("shot8");
+			changeShot8.textContent = "/";
+		}
+		if (shot === 10){
+			let changeShot10 = document.getElementById("shot10");
+			changeShot10.textContent = "/";
 		}
 		//continue here
 	}
