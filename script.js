@@ -1,6 +1,5 @@
 console.log("Programmed by Link Kelly (LinkGoesBowling)");
 //start of score calculator
-//current issues: adding a strike on shot 20 puts an X on both shot 20 and 22 on the scorecard
 let shot1Count = undefined;
 let shot2Count = undefined;
 let shot3Count = undefined;
