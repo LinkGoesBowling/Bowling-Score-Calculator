@@ -320,9 +320,43 @@ function addSpare(){
 	if (shot === 2){
 		let changeShot2 = document.getElementById("shot2");
 		changeShot2.textContent = "/";
-		console.log("changeShot2 triggered"); //for debugging purposes
 	}
-		//continue here
+	if (shot === 4){
+		let changeShot4 = document.getElementById("shot4");
+		changeShot4.textContent = "/";
+	}
+	if (shot === 6){
+		let changeShot6 = document.getElementById("shot6");
+		changeShot6.textContent = "/";
+	}
+	if (shot === 8){
+		let changeShot8 = document.getElementById("shot8");
+		changeShot8.textContent = "/";
+	}
+	if (shot === 10){
+		let changeShot10 = document.getElementById("shot10");
+		changeShot2.textContent = "/";
+	}
+	if (shot === 12){
+		let changeShot12 = document.getElementById("shot12");
+		changeShot12.textContent = "/";
+	}
+	if (shot === 13){
+		let changeShot13 = document.getElementById("shot13");
+		changeShot13.textContent = "/";
+	}
+	if (shot === 15){
+		let changeShot15 = document.getElementById("shot15");
+		changeShot15.textContent = "/";
+	}
+	if (shot === 17){
+		let changeShot2 = document.getElementById("shot17");
+		changeShot17.textContent = "/";
+	}
+	if (shot === 21 && shot20Count !== 10){
+		let changeShot21 = document.getElementById("shot21");
+		changeShot21.textContent = "/";
+	}
 	if (shot === 22){
 		if (shot21Count === 10){
 			console.log("That's not a spare situation!");
@@ -330,8 +364,10 @@ function addSpare(){
 		else {
 			score += 10 - shot21Count;
 			shot++;
+			let changeShot22 = document.getElementById("shot2");
+			changeShot22.textContent = "/";
 			endGame();
-		}
+		} //if there is a bracket error, it's somewhere here
 	}
 	if (shot === 2 || shot === 4 || shot === 6 || shot === 8 || shot === 10 || shot === 12 || shot === 14 || shot === 16 || shot === 18){
 		if (strikeFollowedByPinCount === true){
