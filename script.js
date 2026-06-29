@@ -202,6 +202,8 @@ function addStrike(){
 		if (previousShot === 10 || previousShot !== 10){
 			score += 10;
 			shot++;
+			let changeShot22 = document.getElementById("shot22");
+			changeShot22.textContent = "X";
 			endGame();
 			return;
 		}
