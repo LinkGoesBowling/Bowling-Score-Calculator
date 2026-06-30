@@ -238,9 +238,3 @@ img {
   top: 73.5%;
   left: 67%;
 }
-/* source: https://stackoverflow.com/questions/24845339/need-help-with-javascript-css-to-manipulate-html-table-layout-for-bowling-scorec */
-li{
-  list-style-type: none;
-  float:left;
-  background:red; border:2px #000 solid;
-}
