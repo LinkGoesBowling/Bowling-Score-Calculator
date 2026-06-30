@@ -544,8 +544,6 @@ function endGame(){
 	shot++;
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
-	let changeFrame10 = document.getElementById("frame10");
-	changeFrame10.textContent = score;
 }
 function restartGame(){
 	const changeScore = document.getElementById("score");
