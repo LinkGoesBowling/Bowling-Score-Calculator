@@ -83,7 +83,7 @@ function addPins(count){
 				let changeShot2 = document.getElementById("shot2");
 				changeShot2.textContent = shot2Count;
 				changeFrame1.textContent = score;
-				changeFrame1.style.color = #000000;
+				changeFrame1.style.color = 'black';
 			}
 			if (shot === 3){
 				shot3Count = count;
