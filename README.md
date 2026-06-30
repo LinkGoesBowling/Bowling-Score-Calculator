@@ -4,7 +4,7 @@
 <p>The website calculates the score based on the shots entered and then calculates an average. At the moment, the scorecard is shown on the page, but it needs some formatting improvements since it doesn't do well with resizing the page. Currently, the data is only there for the active session and is cleared when the page is refreshed. Averages are not shown on the page yet, but the JavaScript calculates them.</p>
 <p>This project is open for anybody to use, modify, or build upon.</p>
 <h2>🌐 Website</h2>
-<p>The project is on this website: https://linkgoesbowling.github.io/Bowling-Scores-App/</p>
+<p>The project is on this website: <a href="https://linkgoesbowling.github.io/Bowling-Scores-App/" target="_blank" rel="noreferrer noopener">https://linkgoesbowling.github.io/Bowling-Scores-App/</a></p>
 <h2>🖼️ Images of example scorecards from this program:</h2>
 <figure>
   <img width="505" height="74" alt="{3ED58C81-BA20-4A89-886E-39D27FA0E266}" src="https://github.com/user-attachments/assets/4190e350-42b5-4aa9-9a69-c55b13ffa072" />
