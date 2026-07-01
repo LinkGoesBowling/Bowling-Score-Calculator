@@ -195,16 +195,16 @@ img {
 }
 .frame1box{
   position: absolute;
-  top: 98.2%;
-  left: 3%;
+  top: 101%;
+  left: 25px;
   height: 20px;
   width: 17px;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 .frame1{
+  top: 100%;
+  left: 0;
   text-align: center;
   position: relative;
   background-color: white;
@@ -222,17 +222,43 @@ img {
   left: 43px;
   bottom: 54px;
 }
-.frame3{
-  text-align: center;
+.frame2box{
   position: absolute;
-  top: 73.5%;
-  left: 32.5%;
+  top: 101%;
+  left: 68px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.frame3{
+  bottom: 108px;
+  left: 87px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
+}
+.frame3box{
+  position: absolute;
+  top: 101%;
+  left: 110px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .frame4{
+  top: 100px;
+  left: 200px;
   text-align: center;
-  position: absolute;
-  top: 73.5%;
-  left: 37.5%;
+  position: relative;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
 }
 .frame5{
   text-align: center;
