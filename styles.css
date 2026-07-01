@@ -194,6 +194,7 @@ img {
   left: 69%;
 }
 .frame1box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 25px;
@@ -223,6 +224,7 @@ img {
   bottom: 54px;
 }
 .frame2box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 68px;
@@ -242,6 +244,7 @@ img {
   border: 2px solid black;
 }
 .frame3box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 110px;
@@ -261,6 +264,7 @@ img {
   border: 2px solid black;
 }
 .frame4box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 153px;
@@ -280,6 +284,7 @@ img {
   border: 2px solid black;
 }
 .frame5box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 198px;
@@ -299,6 +304,7 @@ img {
   border: 2px solid black;
 }
 .frame6box{
+  text-align: center;
   position: absolute;
   bottom: 285px;
   left: 240px;
@@ -309,21 +315,63 @@ img {
 }
 .frame7{
   text-align: center;
+  position: relative;
+  bottom: 324px;
+  left: 260px;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
+}
+.frame7box{
   position: absolute;
-  top: 73.5%;
-  left: 51.5%;
+  text-align: center;
+  bottom: 285px;
+  left: 285px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .frame8{
   text-align: center;
+  position: relative;
+  bottom: 378px;
+  left: 304px;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
+}
+.frame8box{
+  text-align: center;
   position: absolute;
-  top: 73.5%;
-  left: 56.5%;
+  bottom: 285px;
+  left: 328px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .frame9{
   text-align: center;
-  position: absolute;
-  top: 73.5%;
-  left: 61.5%;
+  position: relative;
+  bottom: 432px;
+  left: 348px;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
+}
+.frame9box{
+  text-align: center;
+  position: relative;
+  bottom: 485px;
+  left: 373px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .frame10{
   text-align: center;
