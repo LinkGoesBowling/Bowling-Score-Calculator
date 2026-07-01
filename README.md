@@ -1,6 +1,6 @@
 # 🎳 Bowling Scores App
 <h2>📖 About</h2>
-<p>This is my first coding project: a bowling score calculator built in HTML, CSS, and JavaScript. It is a solo project that does not use AI that I created to get hands-on programming experience.</p>
+<p>This is my first coding project: a bowling score calculator built in HTML, CSS, and JavaScript. It is a solo project that I created to get hands-on programming experience. AI was not used to program the scoring logic.</p>
 <p>The website calculates the score based on the shots entered and then calculates an average. At the moment, the scorecard is shown on the page, but it needs some formatting improvements since it doesn't do well with resizing the page. Currently, the data is only there for the active session and is cleared when the page is refreshed. Averages are not shown on the page yet, but the JavaScript calculates them.</p>
 <p>This project is open for anybody to use, modify, or build upon.</p>
 <h2>🌐 Website</h2>
