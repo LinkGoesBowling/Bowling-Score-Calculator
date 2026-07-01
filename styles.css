@@ -251,8 +251,8 @@ img {
   border-bottom: 2px solid black;
 }
 .frame4{
-  top: 100px;
-  left: 200px;
+  bottom: 162px;
+  left: 130px;
   text-align: center;
   position: relative;
   background-color: white;
@@ -260,11 +260,24 @@ img {
   width: 40px;
   border: 2px solid black;
 }
-.frame5{
-  text-align: center;
+.frame4box{
   position: absolute;
-  top: 73.5%;
-  left: 42%;
+  top: 101%;
+  left: 153px;
+  height: 20px;
+  width: 17px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.frame5{
+  bottom: 216px;
+  left: 173px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border: 2px solid black;
 }
 .frame6{
   text-align: center;
