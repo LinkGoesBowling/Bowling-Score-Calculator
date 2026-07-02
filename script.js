@@ -310,7 +310,7 @@ function addStrike(){
 	strikeButtonPressed = false;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
-		var frame1Score = 10; //var was used because I wanted function scope
+		var frame1Score = 10; //var was used because I wanted function scope since I'm changing the values again later in the function
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 	}
@@ -401,18 +401,57 @@ function addStrike(){
 	}
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame6 = document.getElementById("frame6score");
+			frame6Score += 10;
+			changeFrame6.textContent = frame6Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame5 = document.getElementById("frame5Score");
+			frame5Score += 10;
+			changeFrame5.textContent = frame5Score;
+			let changeFrame6 = document.getElementById("frame6Score");
+			frame6Score += 10;
+			changeFrame6.textContent = frame6Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		var frame7Score = score;
 	}
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame7 = document.getElementById("frame7score");
+			frame7Score += 10;
+			changeFrame7.textContent = frame7Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame7 = document.getElementById("frame7Score");
+			frame7Score += 10;
+			changeFrame7.textContent = frame5Score;
+			let changeFrame6 = document.getElementById("frame6Score");
+			frame6Score += 10;
+			changeFrame6.textContent = frame6Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		var frame8Score = score;
 	}
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame8 = document.getElementById("frame8score");
+			frame8Score += 10;
+			changeFrame8.textContent = frame8Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame7 = document.getElementById("frame7Score");
+			frame7Score += 10;
+			changeFrame7.textContent = frame5Score;
+			let changeFrame8 = document.getElementById("frame8Score");
+			frame8Score += 10;
+			changeFrame8.textContent = frame8Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		var frame9Score = score;
