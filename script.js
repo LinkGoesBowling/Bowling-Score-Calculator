@@ -310,7 +310,7 @@ function addStrike(){
 	strikeButtonPressed = false;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
-		var frame1Score = 10; //var was used so I could use the variable outside the conditional statement and outside the function
+		var frame1Score = 10; //var was used because I wanted function scope
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 	}
@@ -329,8 +329,8 @@ function addStrike(){
 		changeFrame(3);
 		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame2 = document.getElementById("frame2score");
-			changeFrame2.textContent = frame2Score + 10;
 			frame2Score += 10;
+			changeFrame2.textContent = frame2Score;
 		}
 		if (doubleStrike === true){
 			let changeFrame1 = document.getElementById("frame1score");
@@ -344,33 +344,78 @@ function addStrike(){
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame3 = document.getElementById("frame3score");
+			frame3Score += 10;
+			changeFrame3.textContent = frame3Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame2 = document.getElementById("frame2Score");
+			frame2Score += 10;
+			changeFrame2.textContent = frame2Score;
+			let changeFrame3 = document.getElementById("frame3Score");
+			frame3Score += 10;
+			changeFrame3.textContent = frame3Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame4Score = score;
 	}
 	if (shot === 11 || shot === 10){
 		changeFrame(5);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame4 = document.getElementById("frame4score");
+			frame4Score += 10;
+			changeFrame4.textContent = frame4Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame3 = document.getElementById("frame3Score");
+			frame3Score += 10;
+			changeFrame3.textContent = frame3Score;
+			let changeFrame4 = document.getElementById("frame4Score");
+			frame4Score += 10;
+			changeFrame4.textContent = frame4Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame5Score = score;
 	}
 	if (shot === 12 || shot === 13){
 		changeFrame(6);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame5 = document.getElementById("frame5score");
+			frame5Score += 10;
+			changeFrame5.textContent = frame5Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame5 = document.getElementById("frame5Score");
+			frame5Score += 10;
+			changeFrame5.textContent = frame5Score;
+			let changeFrame4 = document.getElementById("frame4Score");
+			frame4Score += 10;
+			changeFrame4.textContent = frame4Score;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame6Score = score;
 	}
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame7Score = score;
 	}
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame8Score = score;
 	}
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame9Score = score;
 	}
 	return;
 }
