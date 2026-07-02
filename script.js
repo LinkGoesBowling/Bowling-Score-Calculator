@@ -308,8 +308,6 @@ function addStrike(){
 	}
 	previousShot = 10;
 	strikeButtonPressed = false;
-	const changeScore = document.getElementById("score");
-	changeScore.textContent = 10;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
 		var frame1Score = 10; //var was used so I could use the variable outside this conditional statement
