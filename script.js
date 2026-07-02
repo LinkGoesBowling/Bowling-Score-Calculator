@@ -1,4 +1,14 @@
 console.log("Programmed by Link Kelly (LinkGoesBowling)");
+/*bowling logic explained:
+1. A strike doubles the next 2 shots. For example, if I get 3 strikes in a row to start the game, I would have 60 because the first one would be 10+10+10 for 30, the second one would be 10+10 for 20, and the third one
+would be 10. If I added a 9-count and a spare after that, I would have 89 because the second one would have 9 pins added to it and the third one would have 10 pins added to it and the frame itself would be worth 10 pins.
+2. A spare doubles the next shot. For example, if I started the game with a spare (first-shot count doesn't matter since it's the first shot) and then followed it up with a 9-count with a spare, I would have 29 because
+the first spare would double the next shot and be worth 10+9 for 19, and the second spare, by itself since it isn't doubling anything, is worth 10 pins.
+3. Open frames (no spare/no strike) provide no bonus points, although strikes and spares will double them. If an open frame comes after a strike, the strike would double both shots.
+4. In the tenth frame, no bonus points are awarded from strikes and spares, but they will offer extra shots, and you can have up to 3. Spares and strikes from before the 10th frame will still double them. For example, if
+you get 3 strikes in the 10th frame and a spare in the 9th, the 9th and 10th frame would combine to be worth 50 points since the spare would be worth 10 pins alone and add 10 pins because of the strike that came after it.
+Then after those 20 pins in the 9th frame, there would be 30 pins added from the 10th frame since the 10th frame strikes do not double anything.
+*/
 //start of score calculator
 let shot1Count = undefined;
 let shot2Count = undefined;
@@ -538,11 +548,11 @@ function tenthFrame(shots){
 	}
 }
 function changeFrame(){
-	if (shot === 1 || shot === 2){
+	if (shot === 1 || shot === 3){
 		let changeFrame1 = document.getElementById("frame1score");
 		changeFrame1.textContent = score;
 	}
-	if (shot === 3 || shot === 4){
+	if (shot === 4){
 		let changeFrame2 = document.getElementById("frame2score");
 		changeFrame2.textContent = score;
 	}
