@@ -42,3 +42,11 @@
 </ul>
 <h2>💡 Why I made this</h2>
 <p>I created this project for coding experience, learn more about coding, and build something around one of my favorite interests: bowling. Making coding projects helped me learn things in a way that a coding class could never do on its own.</p>
+<h2>🛠️ JavaScript Skills Demonstrated</h2>
+<ul>
+  <li>Mathematical Calculations</li>
+  <li>Functions</li>
+  <li>DOM Manipulation</li>
+  <li>Arrays</li>
+  <li>Loops</li>
+</ul>
