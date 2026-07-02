@@ -60,7 +60,7 @@ function addPins(count){
 			}
 			if (shot === 3){
 				shot3Count = count;
-				let changeShot3 = document.getElementById("shot3");
+				let changeShot3 = document.getElementById("shot2");
 				changeShot3.textContent = shot3Count;
 			}
 			if (shot === 4){
@@ -70,7 +70,7 @@ function addPins(count){
 			}
 			if (shot === 5){
 				shot5Count = count;
-				let changeShot5 = document.getElementById("shot5");
+				let changeShot5 = document.getElementById("shot3");
 				changeShot5.textContent = shot5Count;
 			}
 			if (shot === 6){
@@ -80,7 +80,7 @@ function addPins(count){
 			}
 			if (shot === 7){
 				shot7Count = count;
-				let changeShot7 = document.getElementById("shot7");
+				let changeShot7 = document.getElementById("shot4");
 				changeShot7.textContent = shot7Count;
 			}
 			if (shot === 8){
@@ -90,7 +90,7 @@ function addPins(count){
 			}
 			if (shot === 9){
 				shot9Count = count;
-				let changeShot9 = document.getElementById("shot9");
+				let changeShot9 = document.getElementById("shot5");
 				changeShot9.textContent = shot9Count;
 			}
 			if(shot === 10){
@@ -100,7 +100,7 @@ function addPins(count){
 			}
 			if (shot === 11){
 				shot11Count = count;
-				let changeShot11 = document.getElementById("shot11");
+				let changeShot11 = document.getElementById("shot6");
 				changeShot11.textContent = shot11Count;
 			}
 			if (shot === 12) {
@@ -110,7 +110,7 @@ function addPins(count){
 			}
 			if (shot === 13){
 				shot13Count = count;
-				let changeShot13 = document.getElementById("shot13");
+				let changeShot13 = document.getElementById("shot7");
 				changeShot13.textContent = shot13Count;
 			}
 			if (shot === 14){
@@ -120,7 +120,7 @@ function addPins(count){
 			}
 			if (shot === 15){
 				shot15Count = count;
-				let changeShot15 = document.getElementById("shot15");
+				let changeShot15 = document.getElementById("shot8");
 				changeShot15.textContent = shot15Count;
 			}
 			if (shot === 16){
@@ -130,7 +130,7 @@ function addPins(count){
 			}
 			if (shot === 17){
 				shot17Count = count;
-				let changeShot17 = document.getElementById("shot17");
+				let changeShot17 = document.getElementById("shot8");
 				changeShot17.textContent = shot17Count;
 			}
 			if (shot === 18){
