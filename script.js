@@ -539,7 +539,7 @@ function tenthFrame(shots){
 }
 function changeFrame(frame){
 	if (frame === 1){
-		let changeFrame1 = document.getElementById("shot1");
+		let changeFrame1 = document.getElementById("frame1score");
 		changeFrame1.textContent = score;
 	}
 }
