@@ -57,6 +57,7 @@ function addPins(count){
 				shot2Count = count;
 				let changeShot2 = document.getElementById("frame1box");
 				changeShot2.textContent = shot2Count;
+				changeFrame(1);
 			}
 			if (shot === 3){
 				shot3Count = count;
@@ -197,10 +198,6 @@ function addPins(count){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
-}
-if (shot === 2){
-	let changeFrame1 = document.getElementById("frame1");
-	changeFrame1.textContent = score;
 }
 function addStrike(){
 	if (shot === 22){
@@ -538,6 +535,12 @@ function tenthFrame(shots){
 	return;
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
+	}
+}
+function changeFrame(frame){
+	if (frame === 1){
+		let changeFrame1 = document.getElementById("frame1");
+		changeFrame1.textContent = score;
 	}
 }
 //end of score calculator
