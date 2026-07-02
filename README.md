@@ -46,6 +46,7 @@
 <ul>
   <li>Mathematical Calculations</li>
   <li>Functions</li>
+  <li>Conditional Logic</li>
   <li>DOM Manipulation</li>
   <li>Arrays</li>
   <li>Loops</li>
