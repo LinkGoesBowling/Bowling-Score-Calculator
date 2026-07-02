@@ -316,21 +316,31 @@ function addStrike(){
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
-		if (previousShot === "spare"){
+		if (previousShot === "spare" || previousShot === 10){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
-		}
-		if (previousShot === 10){
-			let changeFrame1 = document.getElementById("frame1score");
-			changeFrame1.textContent = 20;
+			frame1Score += 10;
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame2Score = score;
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame2 = document.getElementById("frame2score");
+			changeFrame2.textContent = frame2Score + 10;
+			frame2Score += 10;
+		}
+		if (doubleStrike === true){
+			let changeFrame1 = document.getElementById("frame1score");
+			changeFrame1.textContent = 30;
+			let changeFrame2 = document.getElementById("frame2score");
+			changeFrame2.textContent = 50;
+		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
+		var frame3Score = score;
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
