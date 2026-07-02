@@ -198,6 +198,10 @@ function addPins(count){
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
 }
+if (shot === 2){
+	let changeFrame1 = document.getElementById("frame1");
+	changeFrame1.textContent = score;
+}
 function addStrike(){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){
