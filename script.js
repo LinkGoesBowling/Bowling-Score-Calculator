@@ -8,7 +8,6 @@ the first spare would double the next shot and be worth 10+9 for 19, and the sec
 4. In the tenth frame, no bonus points are awarded from strikes and spares, but they will offer extra shots, and you can have up to 3. Spares and strikes from before the 10th frame will still double them. For example, if
 you get 3 strikes in the 10th frame and a spare in the 9th, the 9th and 10th frame would combine to be worth 50 points since the spare would be worth 10 pins alone and add 10 pins because of the strike that came after it.
 Then after those 20 pins in the 9th frame, there would be 30 pins added from the 10th frame since the 10th frame strikes do not double anything.
-(this line is just to get it to update since it wasn't working)
 */
 //start of score calculator
 let shot1Count = undefined;
@@ -311,7 +310,9 @@ function addStrike(){
 	strikeButtonPressed = false;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
-		var frame1Score = 10; //var was used so I could use the variable outside this conditional statement
+		var frame1Score = 10; //var was used so I could use the variable outside the conditional statement and outside the function
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
@@ -323,31 +324,45 @@ function addStrike(){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
 		}
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 11 || shot === 10){
 		changeFrame(5);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 12 || shot === 13){
 		changeFrame(6);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
 	}
 	return;
-	let changeScore = document.getElementById("score");
-	changeScore.textContent = score;
 }
 function addSpare(){
 	spareButtonPressed = true;
