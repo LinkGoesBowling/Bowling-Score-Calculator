@@ -320,7 +320,7 @@ function addStrike(){
 		if (previousShot === "spare" || previousShot === 10){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
-			frame1Score += 10;
+			frame1Score = 20;
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -347,8 +347,7 @@ function addStrike(){
 		changeFrame(4);
 		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame3 = document.getElementById("frame3score");
-			frame3Score += 10;
-			changeFrame3.textContent = frame3Score;
+			changeFrame3.textContent = frame3Score + 10;
 		}
 		if (doubleStrike === true){
 			let changeFrame2 = document.getElementById("frame2score");
