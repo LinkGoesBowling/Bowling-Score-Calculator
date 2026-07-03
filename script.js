@@ -45,6 +45,15 @@ let shot20Completed = false;
 let allGames = [];
 let shot21Completed = false;
 const getGamesFromLocalStorage = localStorage.getItem('allGames');
+let frame1Score = undefined;
+let frame2Score = undefined;
+let frame3Score = undefined;
+let frame4Score = undefined;
+let frame5Score = undefined;
+let frame6Score = undefined;
+let frame7Score = undefined;
+let frame8Score = undefined;
+let frame9Score = undefined;
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
@@ -310,7 +319,7 @@ function addStrike(){
 	strikeButtonPressed = false;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
-		var frame1Score = 10; //var was used because I wanted function scope since I'm changing the values again later in the function
+		frame1Score = 10;
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 	}
@@ -323,7 +332,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame2Score = score;
+		frame2Score = score;
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
@@ -340,7 +349,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame3Score = score;
+		frame3Score = score;
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
@@ -358,7 +367,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame4Score = score;
+		frame4Score = score;
 	}
 	if (shot === 11 || shot === 10){
 		changeFrame(5);
@@ -377,7 +386,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame5Score = score;
+		frame5Score = score;
 	}
 	if (shot === 12 || shot === 13){
 		changeFrame(6);
@@ -396,7 +405,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame6Score = score;
+		frame6Score = score;
 	}
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
@@ -415,7 +424,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame7Score = score;
+		frame7Score = score;
 	}
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
@@ -434,7 +443,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame8Score = score;
+		frame8Score = score;
 	}
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
@@ -453,7 +462,7 @@ function addStrike(){
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
-		var frame9Score = score;
+		frame9Score = score;
 	}
 	return;
 }
