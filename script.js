@@ -476,9 +476,10 @@ function addStrike(){
 		if (doubleStrike === true){
 			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
-			changeFrame8.textContent = document.getElementById("frame8score");
+			changeFrame8.textContent = frame8Score;
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
+			changeFrame9 = frame9Score;
 		}
 	}
 	if (shot === 21){
