@@ -345,8 +345,10 @@ function addStrike(){
 		if (doubleStrike === true){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 30;
+			frame1Score = 30;
 			let changeFrame2 = document.getElementById("frame2score");
 			changeFrame2.textContent = 50;
+			frame2Score = 50;
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
