@@ -480,7 +480,7 @@ function addStrike(){
 			changeFrame8.textContent = frame8Score;
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
-			changeFrame9 = frame9Score;
+			changeFrame9.textContent = frame9Score;
 			console.log("frame9Score: " + frame9Score); //for debugging
 		}
 	}
