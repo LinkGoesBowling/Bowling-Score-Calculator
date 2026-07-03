@@ -356,7 +356,8 @@ function addStrike(){
 		changeFrame(4);
 		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame3 = document.getElementById("frame3score");
-			changeFrame3.textContent = frame3Score + 10;
+			frame3Score += 10;
+			changeFrame3.textContent = frame3Score;
 		}
 		if (doubleStrike === true){
 			let changeFrame2 = document.getElementById("frame2score");
