@@ -480,22 +480,22 @@ function addStrike(){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
 			changeFrame9.textContent = frame9Score;
-			console.log("shot === 21 triggered");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		frame9Score = score;
+		console.log("shot === 21 triggered");
 	}
 	if (shot === 22){
 		if (previousShot === 10){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
-			console.log("shot === 22 triggered");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		frame9Score = score;
+		console.log("shot === 22 triggered");
 	}
 	return;
 }
