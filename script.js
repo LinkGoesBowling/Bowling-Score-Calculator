@@ -480,6 +480,7 @@ function addStrike(){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
 			changeFrame9.textContent = frame9Score;
+			console.log("shot === 21 triggered");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -490,6 +491,7 @@ function addStrike(){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
+			console.log("shot === 22 triggered");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
