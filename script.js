@@ -325,7 +325,7 @@ function addStrike(){
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
-		if (previousShot === "spare" || previousShot === 10){
+		if (shot1Count === 10 || shot2Count === "spare"){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
 			frame1Score = 20;
@@ -336,12 +336,12 @@ function addStrike(){
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
-		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+		if (shot5Count === "spare" || (shot4Count === 10 && shot2Count !== 10)){
 			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
 		}
-		if (doubleStrike === true){
+		if (shot1Count === 10 && shot3Count === 10){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 30;
 			frame1Score = 30;
@@ -355,7 +355,7 @@ function addStrike(){
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
-		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+		if (shot7Count === "spare" || (shot6Count === 10 && doubleStrike === false)){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
