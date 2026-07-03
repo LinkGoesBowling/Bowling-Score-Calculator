@@ -365,7 +365,7 @@ function addStrike(){
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
 			let changeFrame3 = document.getElementById("frame3score");
-			frame3Score += 10;
+			frame3Score += 20;
 			changeFrame3.textContent = frame3Score;
 		}
 		let changeScore = document.getElementById("score");
@@ -384,7 +384,7 @@ function addStrike(){
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
 			let changeFrame4 = document.getElementById("frame4score");
-			frame4Score += 10;
+			frame4Score += 20;
 			changeFrame4.textContent = frame4Score;
 		}
 		let changeScore = document.getElementById("score");
@@ -400,7 +400,7 @@ function addStrike(){
 		}
 		if (doubleStrike === true){
 			let changeFrame5 = document.getElementById("frame5score");
-			frame5Score += 10;
+			frame5Score += 20;
 			changeFrame5.textContent = frame5Score;
 			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
@@ -422,7 +422,7 @@ function addStrike(){
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
 			let changeFrame6 = document.getElementById("frame6score");
-			frame6Score += 10;
+			frame6Score += 20;
 			changeFrame6.textContent = frame6Score;
 		}
 		let changeScore = document.getElementById("score");
@@ -438,7 +438,7 @@ function addStrike(){
 		}
 		if (doubleStrike === true){
 			let changeFrame7 = document.getElementById("frame7score");
-			frame7Score += 10;
+			frame7Score += 20;
 			changeFrame7.textContent = frame5Score;
 			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
@@ -460,7 +460,7 @@ function addStrike(){
 			frame7Score += 10;
 			changeFrame7.textContent = frame5Score;
 			let changeFrame8 = document.getElementById("frame8score");
-			frame8Score += 10;
+			frame8Score += 20;
 			changeFrame8.textContent = frame8Score;
 		}
 		let changeScore = document.getElementById("score");
