@@ -467,7 +467,7 @@ function addStrike(){
 		changeScore.textContent = score;
 		frame9Score = score;
 	}
-	if (shot === 20){
+	if (shot === 21){
 		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
@@ -482,7 +482,7 @@ function addStrike(){
 			changeFrame9 = frame9Score;
 		}
 	}
-	if (shot === 21){
+	if (shot === 22){
 		if (previousShot === 10){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
