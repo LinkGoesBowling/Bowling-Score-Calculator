@@ -325,11 +325,10 @@ function addStrike(){
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
-		if (shot1Count === 10 || shot2Count === "spare"){
+		if (previousShot === "spare" || previousShot === 10){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
 			frame1Score = 20;
-			console.log("Frame 2, frame1Score changed to 20");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -337,20 +336,18 @@ function addStrike(){
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
-		if (shot4Count === "spare" || (shot3Count === 10 && shot1Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
-			console.log("Frame 2 was spare/strike but not double strike");
 		}
-		if (shot1Count === 10 && shot3Count === 10){
+		if (doubleStrike === true){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 30;
 			frame1Score = 30;
 			let changeFrame2 = document.getElementById("frame2score");
 			changeFrame2.textContent = 50;
 			frame2Score = 50;
-			console.log("It is frame 3, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -358,20 +355,18 @@ function addStrike(){
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
-		if (shot6Count === "spare" || (shot5Count === 10 && shot3Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
-			console.log("Frame 3 was a spare or strike, frame 2 was not a strike");
 		}
-		if (shot5Count === 10 && shot3Count === 10){
+		if (doubleStrike === true){
 			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 20;
 			changeFrame3.textContent = frame3Score;
-			console.log("It is frame 4, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -379,20 +374,18 @@ function addStrike(){
 	}
 	if (shot === 11 || shot === 10){
 		changeFrame(5);
-		if (shot8Count === "spare" || (shot7Count === 10 && shot5Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
-			console.log("Frame 4 was spare/strike, but not double strike");
 		}
-		if (shot7Count === 10 && shot5Count === 10){
+		if (doubleStrike === true){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
 			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 20;
 			changeFrame4.textContent = frame4Score;
-			console.log("It is frame 5, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -400,20 +393,18 @@ function addStrike(){
 	}
 	if (shot === 12 || shot === 13){
 		changeFrame(6);
-		if (shot10Count === "spare" || (shot9Count === 10 && shot7Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
-			console.log("It is frame 6, frame 5 was spare/strike but not double strike");
 		}
-		if (shot9Count === 10 && shot7Count === 10){
+		if (doubleStrike === true){
 			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 20;
 			changeFrame5.textContent = frame5Score;
 			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
-			console.log("It is frame 6, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -421,20 +412,18 @@ function addStrike(){
 	}
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
-		if (shot12Count === "spare" || (shot11Count === 10 && shot9Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
-			console.log("Frame 6 was spare/strike but not double strike");
 		}
-		if (shot11Count === 10 && shot9Count === 10){
+		if (doubleStrike === true){
 			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
 			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 20;
 			changeFrame6.textContent = frame6Score;
-			console.log("It is frame 7, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -442,20 +431,18 @@ function addStrike(){
 	}
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
-		if (shot14Count === "spare" || (shot13Count === 10 && shot11Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
-			console.log("Frame 7 was spare/strike but not double strike");
 		}
-		if (shot13Count === 10 && shot11Count === 10){
+		if (doubleStrike === true){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 20;
 			changeFrame7.textContent = frame7Score;
 			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
-			console.log("It is frame 8, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
@@ -463,32 +450,30 @@ function addStrike(){
 	}
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
-		if (shot16Count === "spare" || (shot15Count === 10 && shot13Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
-			console.log("Frame 8 was a spare/strike, but not double strike");
 		}
-		if (shot15Count === 10 && shot13Count === 10){
+		if (doubleStrike === true){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
 			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 20;
 			changeFrame8.textContent = frame8Score;
-			console.log("It is frame 9, double strike");
 		}
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		frame9Score = score;
 	}
 	if (shot === 21){
-		if (shot18Count === "spare" || (shot17Count === 10 && shot15Count !== 10)){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
 		}
-		if (shot17Count === 10 && shot15Count === 10){
+		if (doubleStrike === true){
 			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
@@ -501,7 +486,7 @@ function addStrike(){
 		frame9Score = score;
 	}
 	if (shot === 22){
-		if (shot17Count === 10){
+		if (previousShot === 10){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
