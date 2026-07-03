@@ -350,10 +350,10 @@ function addStrike(){
 			changeFrame3.textContent = frame3Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame2 = document.getElementById("frame2Score");
+			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
-			let changeFrame3 = document.getElementById("frame3Score");
+			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
 		}
@@ -369,10 +369,10 @@ function addStrike(){
 			changeFrame4.textContent = frame4Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame3 = document.getElementById("frame3Score");
+			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
-			let changeFrame4 = document.getElementById("frame4Score");
+			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
 		}
@@ -388,10 +388,10 @@ function addStrike(){
 			changeFrame5.textContent = frame5Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame5 = document.getElementById("frame5Score");
+			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
-			let changeFrame4 = document.getElementById("frame4Score");
+			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
 		}
@@ -407,10 +407,10 @@ function addStrike(){
 			changeFrame6.textContent = frame6Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame5 = document.getElementById("frame5Score");
+			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
-			let changeFrame6 = document.getElementById("frame6Score");
+			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
 		}
@@ -426,10 +426,10 @@ function addStrike(){
 			changeFrame7.textContent = frame7Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame7 = document.getElementById("frame7Score");
+			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame5Score;
-			let changeFrame6 = document.getElementById("frame6Score");
+			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
 		}
@@ -445,10 +445,10 @@ function addStrike(){
 			changeFrame8.textContent = frame8Score;
 		}
 		if (doubleStrike === true){
-			let changeFrame7 = document.getElementById("frame7Score");
+			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame5Score;
-			let changeFrame8 = document.getElementById("frame8Score");
+			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
 		}
