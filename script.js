@@ -439,7 +439,7 @@ function addStrike(){
 		if (doubleStrike === true){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 20;
-			changeFrame7.textContent = frame5Score;
+			changeFrame7.textContent = frame7Score;
 			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
