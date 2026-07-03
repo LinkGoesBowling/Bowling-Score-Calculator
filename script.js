@@ -480,16 +480,20 @@ function addStrike(){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
 			changeFrame9.textContent = frame9Score;
-			console.log("frame9Score: " + frame9Score); //for debugging
 		}
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
+		frame9Score = score;
 	}
 	if (shot === 22){
 		if (previousShot === 10){
 			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
-			console.log("frame9Score: " + frame9Score); //for debugging
 		}
+		let changeScore = document.getElementById("score");
+		changeScore.textContent = score;
+		frame9Score = score;
 	}
 	return;
 }
