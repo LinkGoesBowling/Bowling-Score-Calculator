@@ -468,6 +468,27 @@ function addStrike(){
 		changeScore.textContent = score;
 		frame9Score = score;
 	}
+	if (shot === 20){
+		if (previousShot === "spare" || (previousShot === 10 && doubleStrike === false)){
+			let changeFrame9 = document.getElementById("frame9score");
+			frame9Score += 10;
+			changeFrame9.textContent = frame9Score;
+		}
+		if (doubleStrike === true){
+			let changeFrame8 = document.getElementById("frame8score");
+			frame8Score += 10;
+			changeFrame8.textContent = document.getElementById("frame8score");
+			let changeFrame9 = document.getElementById("frame9score");
+			frame9Score += 20;
+		}
+	}
+	if (shot === 21){
+		if (previousShot === 10){
+			let changeFrame9 = document.getElementById("frame9score");
+			frame9Score += 10;
+			changeFrame9.textContent = frame9Score;
+		}
+	}
 	return;
 }
 function addSpare(){
