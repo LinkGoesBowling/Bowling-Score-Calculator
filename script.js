@@ -291,9 +291,6 @@ function addPins(count){
 		}
 		previousShot = count;
 	}
-	if (shot === 23){
-		endGame();
-	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
 	if (shot === 2 || shot === 3){
@@ -330,6 +327,9 @@ function addPins(count){
 	if (shot === 22 && shot20Count !== 10 && count === 10 - shot20Count){
 		let changeShot21 = document.getElementById("frame10box1");
 		changeShot21.textContent = "/";
+	}
+	if (shot === 23){
+		endGame();
 	}
 }
 function addStrike(){
