@@ -143,17 +143,8 @@ function addPins(count){
 			shot22Count = count;
 			let changeShot22 = document.getElementById("frame10box2");
 			changeShot22.textContent = shot22Count;
-			if (count === 10 - shot21Count && shot21Count !== 10){
-				changeShot22.textContent = "/";
-			}
 			endGame();
 			return;
-		}
-	}
-	if (shot === 21){
-		if (count === 10 - shot20Count && shot20Count !== 10){
-			let changeShot21 = document.getElementById("frame10box1");
-			changeShot21.textContent = "/";
 		}
 	}
 			if (shot === 1){
@@ -247,10 +238,6 @@ function addPins(count){
 				let changeShot18 = document.getElementById("frame9box");
 				changeShot18.textContent = shot18Count;
 			}
-			if (shot === 22 && count === 10 - shot21Count && shot21Count !== 10){
-				let changeShot22 = document.getElementById("shot22");
-				changeShot22.textContent = "/"
-			}
 		if (shot === 19 || shot === 20 || shot === 21){
 			tenthFrame(count);
 		}
@@ -336,6 +323,14 @@ function addPins(count){
 	}
 	if (shot ===  18|| shot === 19){
 		changeFrame(9);
+	}
+	if (shot === 23 && shot21Count !== 10 && count === 10 - shot21Count){
+		let changeShot22 = document.getElementById("frame10box2");
+		changeShot22.textContent = "/";
+	}
+	if (shot === 22 && shot20Count !== 10 && count === 10 - shot20Count){
+		let changeShot21 = document.getElementById("frame10box1");
+		changeShot21.textContent = "/";
 	}
 }
 function addStrike(){
