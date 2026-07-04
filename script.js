@@ -296,7 +296,33 @@ function addPins(count){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
-	changeFrame();
+	if (shot === 2 || shot === 3){
+		changeFrame(1);
+	}
+	if (shot === 4 || shot === 5){
+		changeFrame(2);
+	}
+	if (shot === 6 || shot === 7){
+		changeFrame(3);
+	}
+	if (shot === 8 || shot === 9){
+		changeFrame(4);
+	}
+	if (shot ===  10|| shot === 11){
+		changeFrame(5);
+	}
+	if (shot ===  12|| shot === 13){
+		changeFrame(6);
+	}
+	if (shot ===  14|| shot === 15){
+		changeFrame(7);
+	}
+	if (shot ===  16|| shot === 17{
+		changeFrame(8);
+	}
+	if (shot ===  18|| shot === 19){
+		changeFrame(9);
+	}
 }
 function addStrike(){
 	if (shot === 22){
