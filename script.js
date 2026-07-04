@@ -741,10 +741,17 @@ function tenthFrame(shots){
 		if (previousShot !== 10){
 			doubleStrike = false;
 		}
+		if (shot === 2 || shot === 3){
+			changeFrame(1);
+		}
 		shot++;
 		return;
 	}
 	if (shot === 21){
+		if (shots > 10 - shot20Count && shot20Count !== 10){
+			console.log("You can't hit more than 10 pins in a frame!");
+			return;
+		}
 		if (doubleStrike === true && shot20Count === 10){
 			score += shots * 2;
 			shot21Count = shots;
@@ -773,9 +780,6 @@ function tenthFrame(shots){
 			return;
 		}
 		if (shot20Count !== 10){
-			if (shots > 10 - shot20Count){
-				console.log("You can't hit more than 10 pins in a frame!");
-			}
 			if (shots === 10 - shot20Count || spareButtonPressed === true){
 				if (shot17Count === 10){
 					score += shots;
