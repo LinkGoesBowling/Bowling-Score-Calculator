@@ -17,11 +17,65 @@ document.addEventListener("keydown", event => { //src: https://stackoverflow.com
 	}
 	addPins(1);
 })
-document.addEventListener("keydown", event => { //src: https://stackoverflow.com/questions/66991731/how-to-trigger-a-javascript-function-when-specific-key-is-pressed-on-keyboard, modified
+document.addEventListener("keydown", event => {
 	if (event.isComposing || event.keyCode !== 50){
 		return;
 	}
 	addPins(2);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 51){
+		return;
+	}
+	addPins(3);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 52){
+		return;
+	}
+	addPins(4);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 53){
+		return;
+	}
+	addPins(5);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 54){
+		return;
+	}
+	addPins(6);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 55){
+		return;
+	}
+	addPins(7);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 56){
+		return;
+	}
+	addPins(8);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 57){
+		return;
+	}
+	addPins(9);
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 88){
+		return;
+	}
+	addStrike();
+})
+document.addEventListener("keydown", event => {
+	if (event.isComposing || event.keyCode !== 191){
+		return;
+	}
+	addSpare();
 })
 //end of keyboard input script
 //start of score calculator
