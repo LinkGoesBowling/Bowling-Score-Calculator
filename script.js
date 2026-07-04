@@ -143,8 +143,17 @@ function addPins(count){
 			shot22Count = count;
 			let changeShot22 = document.getElementById("frame10box2");
 			changeShot22.textContent = shot22Count;
+			if (count === 10 - shot21Count && shot21Count !== 10){
+				changeShot22.textContent = "/";
+			}
 			endGame();
 			return;
+		}
+	}
+	if (shot === 21){
+		if (count === 10 - shot20Count && shot20Count !== 10){
+			let changeShot21 = document.getElementById("frame10box1");
+			changeShot21.textContent = "/";
 		}
 	}
 			if (shot === 1){
