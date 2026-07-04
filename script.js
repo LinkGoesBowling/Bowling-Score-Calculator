@@ -238,6 +238,10 @@ function addPins(count){
 				let changeShot18 = document.getElementById("frame9box");
 				changeShot18.textContent = shot18Count;
 			}
+			if (shot === 22 && count === 10 - shot21Count && shot21Count !== 10){
+				let changeShot22 = document.getElementById("shot22");
+				changeShot22.textContent = "/"
+			}
 		if (shot === 19 || shot === 20 || shot === 21){
 			tenthFrame(count);
 		}
@@ -751,6 +755,10 @@ function tenthFrame(shots){
 		if (shots > 10 - shot20Count && shot20Count !== 10){
 			console.log("You can't hit more than 10 pins in a frame!");
 			return;
+		}
+		if (shots === 10 - shot20Count && shot20Count !== 10){
+			let changeShot21 = document.getElementById("frame10box1");
+			changeShot21.textContent = "/"
 		}
 		if (doubleStrike === true && shot20Count === 10){
 			score += shots * 2;
