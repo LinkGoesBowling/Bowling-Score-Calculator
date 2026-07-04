@@ -8,6 +8,7 @@ the first spare would double the next shot and be worth 10+9 for 19, and the sec
 4. In the tenth frame, no bonus points are awarded from strikes and spares, but they will offer extra shots, and you can have up to 3. Spares and strikes from before the 10th frame will still double them. For example, if
 you get 3 strikes in the 10th frame and a spare in the 9th, the 9th and 10th frame would combine to be worth 50 points since the spare would be worth 10 pins alone and add 10 pins because of the strike that came after it.
 Then after those 20 pins in the 9th frame, there would be 30 pins added from the 10th frame since the 10th frame strikes do not double anything.
+retrigger update
 */
 //start of keyboard input script
 document.addEventListener("keydown", event => {  //src: https://stackoverflow.com/questions/66991731/how-to-trigger-a-javascript-function-when-specific-key-is-pressed-on-keyboard, modified
