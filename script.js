@@ -16,6 +16,8 @@ document.addEventListener("keydown", event => { //src: https://stackoverflow.com
 		return;
 	}
 	addPins(1);
+})
+document.addEventListener("keydown", event => { //src: https://stackoverflow.com/questions/66991731/how-to-trigger-a-javascript-function-when-specific-key-is-pressed-on-keyboard, modified
 	if (event.isComposing || event.keyCode !== 50){
 		return;
 	}
