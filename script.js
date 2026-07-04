@@ -15,7 +15,7 @@ document.addEventListener("keydown", event => { //src: https://stackoverflow.com
 		return;
 	}
 	addPins(1);
-}
+})
 //end of keyboard input script
 //start of score calculator
 let shot1Count = undefined;
