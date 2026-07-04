@@ -299,39 +299,30 @@ function addPins(count){
 	changeScore.textContent = score;
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
-		frame1Score = count;
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
-		frame2Score = count;
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
-		frame3Score = count;
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
-		frame4Score = count;
 	}
 	if (shot ===  10|| shot === 11){
 		changeFrame(5);
-		frame5Score = count;
 	}
 	if (shot ===  12|| shot === 13){
 		changeFrame(6);
-		frame6Score = count;
 	}
 	if (shot ===  14|| shot === 15){
 		changeFrame(7);
-		frame7Score = count;
 	}
 	if (shot ===  16|| shot === 17){
 		changeFrame(8);
-		frame8Score = count;
 	}
 	if (shot ===  18|| shot === 19){
 		changeFrame(9);
-		frame9Score = count;
 	}
 }
 function addStrike(){
@@ -600,7 +591,6 @@ function addStrike(){
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		frame9Score = score;
-		console.log("shot === 21 triggered");
 	}
 	if (shot === 22){
 		if (previousShot === 10){
@@ -611,7 +601,6 @@ function addStrike(){
 		let changeScore = document.getElementById("score");
 		changeScore.textContent = score;
 		frame9Score = score;
-		console.log("shot === 22 triggered");
 	}
 	return;
 }
@@ -849,6 +838,8 @@ function tenthFrame(shots){
 	changeScore.textContent = score;
 	}
 }
+//end of score calculator
+//DOM manipulation
 function changeFrame(frame){
 	if (frame === 1){
 		let changeFrame1 = document.getElementById("frame1score");
@@ -887,7 +878,7 @@ function changeFrame(frame){
 		changeFrame9.textContent = score;
 	}
 }
-//end of score calculator
+//end of game functions
 function endGame(){
 	allGames.push(score);
 	localStorage.setItem('allGames', allGames);
