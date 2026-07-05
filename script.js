@@ -364,40 +364,49 @@ function addStrike(){
 		}
 	}
 	if (shot === 1){
-	let changeShot2 = document.getElementById("frame1box");
-	changeShot2.textContent = "X";
+		let changeShot2 = document.getElementById("frame1box");
+		changeShot2.textContent = "X";
+		shot1Count = 10;
 	}
 	if (shot === 3){
 		let changeShot4 = document.getElementById("frame2box");
 		changeShot4.textContent = "X";
+		shot3Count = 10;
 	}
 	if (shot === 5){
 		let changeShot6 = document.getElementById("frame3box");
 		changeShot6.textContent = "X";
+		shot5Count = 10;
 	}
 	if (shot === 7){
 		let changeShot8 = document.getElementById("frame4box");
 		changeShot8.textContent = "X";
+		shot7Count = 10;
 	}
 	if (shot === 9){
 		let changeShot10 = document.getElementById("frame5box");
 		changeShot10.textContent = "X";
+		shot9Count = 10;
 	}
 	if (shot === 11){
 		let changeShot12 = document.getElementById("frame6box");
 		changeShot12.textContent = "X";
+		shot11Count = 10;
 	}
 	if (shot === 13){
 		let changeShot14 = document.getElementById("frame7box");
 		changeShot14.textContent = "X";
+		shot13Count = 10;
 	}
 	if (shot === 15){
 		let changeShot16 = document.getElementById("frame8box");
 		changeShot16.textContent = "X";
+		shot15Count = 10;
 	}
 	if (shot === 17){
 		let changeShot18 = document.getElementById("frame9box");
 		changeShot18.textContent = "X";
+		shot17Count = 10;
 	}
 	if (shot === 20){
 		let changeShot20 = document.getElementById("shot10");
@@ -475,7 +484,7 @@ function addStrike(){
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
 		}
-		if (doubleStrike === true){
+		if (shot1Count === 10 && shot3Count === 10){
 			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 30;
 			frame1Score = 30;
@@ -493,9 +502,8 @@ function addStrike(){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
-			console.log("This should not appear twice"); //for debugging
 		}
-		if (doubleStrike === true){
+		if (shot3Count === 10 && shot5Count === 10){
 			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
@@ -514,7 +522,7 @@ function addStrike(){
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
 		}
-		if (doubleStrike === true){
+		if (shot5Count === 10 && shot7Count === 10){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
@@ -533,7 +541,7 @@ function addStrike(){
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
 		}
-		if (doubleStrike === true){
+		if (shot7Count === 10 && shot9Count === 10){
 			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 20;
 			changeFrame5.textContent = frame5Score;
@@ -552,7 +560,7 @@ function addStrike(){
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
 		}
-		if (doubleStrike === true){
+		if (shot9Count === 10 && shot11Count === 10){
 			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
@@ -571,7 +579,7 @@ function addStrike(){
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
 		}
-		if (doubleStrike === true){
+		if (shot11Count === 10 && shot13Count === 10){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 20;
 			changeFrame7.textContent = frame7Score;
@@ -590,7 +598,7 @@ function addStrike(){
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
 		}
-		if (doubleStrike === true){
+		if (shot13Count === 10 && shot15Count === 10){
 			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
@@ -608,7 +616,7 @@ function addStrike(){
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
 		}
-		if (doubleStrike === true){
+		if (shot15Count === 10 && shot17Count === 10){
 			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
