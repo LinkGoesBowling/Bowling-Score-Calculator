@@ -292,17 +292,29 @@ function addPins(count){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
-	if (shot === 2 || shot === 3){
+	if (shot === 2 || shot === 3){ //shot counts are 1 higher than they should be because shot++ is triggered before these
 		changeFrame(1);
 		frame1Score = score;
 	}
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
 		frame2Score = score;
+		if (shot1Count === 10){
+			let changeFrame1 = document.getElementById("frame1score");
+			frame1Score += count;
+			changeFrame1.textContent = frame1Score;
+		}
+		if (shot === 4 && previousShot === "spare"){
+			frame1Score += count;
+			changeFrame1.textContent = frame1Score;
+		}
 	}
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
 		frame3Score = score;
+		if (previousShot === 10 && doubleStrike === false){
+			 
+		} 
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
@@ -481,6 +493,7 @@ function addStrike(){
 			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
+			console.log("This should not appear twice"); //for debugging
 		}
 		if (doubleStrike === true){
 			let changeFrame2 = document.getElementById("frame2score");
