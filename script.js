@@ -312,21 +312,118 @@ function addPins(count){
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
 		frame3Score = score;
-		if (previousShot === 10 && doubleStrike === false){
-			 
+		if (shot3Count === 10 && shot1Count !== 10 && shot4Count !== "spare"){
+			let changeFrame2 = document.getElementById("frame2score");
+			frame2Score += count;
+			changeFrame2.textContent = frame2Score;
 		} 
+		if (shot3Count === 10 && shot1Count === 10){
+			if (shot === 6){
+				let changeFrame1 = document.getElementById("frame1Score");
+				frame1Score += count;
+				changeFrame1.textContent = frame1Score;
+				let changeFrame2 = document.getElementById("frame2Score");
+				frame2Score += count;
+				changeFrame2.textContent = frame2Score
+			}
+			if (shot === 7){
+				let changeFrame2 = document.getElementById("frame2Score");
+				frame2Score += count;
+				changeFrame2.textContent = frame2Score;
+			}
+		}
+		if (shot3Count === "spare" && shot === 6){
+			let changeFrame2 = document.getElementById("frame2Score");
+			frame2Score += count;
+			changeFrame2.textContent = frame2Score;
+		}
 	}
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
 		frame4Score = score;
+		if (shot5Count === 10 && shot3Count !== 10 && shot6Count !== "spare"){
+			let changeFrame2 = document.getElementById("frame2score");
+			frame2Score += count;
+			changeFrame2.textContent = frame2Score;
+		} 
+		if (shot5Count === 10 && shot3Count === 10){
+			if (shot === 8){
+				let changeFrame3 = document.getElementById("frame3Score");
+				frame3Score += count;
+				changeFrame3.textContent = frame3Score;
+				let changeFrame2 = document.getElementById("frame2Score");
+				frame2Score += count;
+				changeFrame2.textContent = frame2Score;
+			}
+			if (shot === 9){
+				let changeFrame3 = document.getElementById("frame3Score");
+				frame3Score += count;
+				changeFrame3.textContent = frame3Score;
+			}
+		}
+		if (shot5Count === "spare" && shot === 8){
+			let changeFrame3 = document.getElementById("frame3Score");
+			frame3Score += count;
+			changeFrame3.textContent = frame3Score;
+		}
 	}
 	if (shot ===  10|| shot === 11){
 		changeFrame(5);
+		if (shot7Count === 10 && shot5Count !== 10 && shot8Count !== "spare"){
+			let changeFrame4 = document.getElementById("frame4score");
+			frame4Score += count;
+			changeFrame4.textContent = frame4Score;
+		} 
+		if (shot5Count === 10 && shot3Count === 10){
+			if (shot === 10){
+				let changeFrame3 = document.getElementById("frame3Score");
+				frame3Score += count;
+				changeFrame3.textContent = frame3Score;
+				let changeFrame4 = document.getElementById("frame4Score");
+				frame4Score += count;
+				changeFrame4.textContent = frame4Score;
+			}
+			if (shot === 11){
+				let changeFrame4 = document.getElementById("frame4Score");
+				frame4Score += count;
+				changeFrame4.textContent = frame4Score;
+			}
+		}
+		if (shot7Count === "spare" && shot === 10){
+			let changeFrame4 = document.getElementById("frame4Score");
+			frame4Score += count;
+			changeFrame4.textContent = frame4Score;
+		}
 		frame5Score = score;
 	}
 	if (shot ===  12|| shot === 13){
 		changeFrame(6);
 		frame6Score = score;
+		if (shot9Count === 10 && shot7Count !== 10 && shot10Count !== "spare"){
+			let changeFrame5 = document.getElementById("frame5score");
+			frame5Score += count;
+			changeFrame5.textContent = frame5Score;
+		} 
+		if (shot7Count === 10 && shot5Count === 10){
+			if (shot === 12){
+				let changeFrame5 = document.getElementById("frame5Score");
+				frame5Score += count;
+				changeFrame5.textContent = frame5Score;
+				let changeFrame4 = document.getElementById("frame4Score");
+				frame4Score += count;
+				changeFrame4.textContent = frame4Score;
+			}
+			if (shot === 13){
+				let changeFrame5 = document.getElementById("frame5Score");
+				frame5Score += count;
+				changeFrame5.textContent = frame5Score;
+			}
+		}
+		if (shot9Count === "spare" && shot === 12){
+			let changeFrame5 = document.getElementById("frame5Score");
+			frame5Score += count;
+			changeFrame5.textContent = frame5Score;
+		}
 	}
 	if (shot ===  14|| shot === 15){
 		changeFrame(7);
