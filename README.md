@@ -1,6 +1,6 @@
 # 🎳 Bowling Scores App
 <h2>🌐 Website</h2>
-<p>The project is on this website: <a href="https://linkgoesbowling.github.io/Bowling-Scores-App/" target="_blank" rel="noreferrer noopener">https://linkgoesbowling.github.io/Bowling-Scores-App/</a></p>
+<p>The project is on this website: <a href="https://linkgoesbowling.github.io/Bowling-Score-Calculator/" target="_blank" rel="noreferrer noopener">https://linkgoesbowling.github.io/Bowling-Score-Calculator/</a></p>
 <h2>📖 About</h2>
 <p>This is my first coding project: a bowling score calculator built in HTML, CSS, and JavaScript. It is a solo project that I created to get hands-on programming experience. AI was not used to program the scoring logic.</p>
 <p>The website calculates the score based on the shots entered and then calculates an average. At the moment, the website's structure is broken because I am working on making it look better, but the JavaScript is completely functional and has accurate scoring. Currently, the data is only there for the active session and is cleared when the page is refreshed. Averages are not shown on the page yet, but the JavaScript calculates them.</p>
