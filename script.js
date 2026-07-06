@@ -134,15 +134,15 @@ let frame6Score = undefined;
 let frame7Score = undefined;
 let frame8Score = undefined;
 let frame9Score = undefined;
-const changeFrame1 = document.getElementById("frame1score");
-const changeFrame2 = document.getElementById("frame2score");
-const changeFrame3 = document.getElementById("frame3score");
-const changeFrame4 = document.getElementById("frame4score");
-const changeFrame5 = document.getElementById("frame5score");
-const changeFrame6 = document.getElementById("frame6score");
-const changeFrame7 = document.getElementById("frame7score");
-const changeFrame8 = document.getElementById("frame8score");
-const changeFrame9 = document.getElementById("frame9score");
+var changeFrame1 = document.getElementById("frame1score");
+var changeFrame2 = document.getElementById("frame2score");
+var changeFrame3 = document.getElementById("frame3score");
+var changeFrame4 = document.getElementById("frame4score");
+var changeFrame5 = document.getElementById("frame5score");
+var changeFrame6 = document.getElementById("frame6score");
+var changeFrame7 = document.getElementById("frame7score");
+var changeFrame8 = document.getElementById("frame8score");
+var changeFrame9 = document.getElementById("frame9score");
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
