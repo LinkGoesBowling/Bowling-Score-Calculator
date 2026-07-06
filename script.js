@@ -793,6 +793,8 @@ function addStrike(){
 		frame9Score = score;
 	}
 	*/
+	const changeScore = document.getElementById("score");
+	changeScore.textContent = score;
 	return;
 }
 function addSpare(){
