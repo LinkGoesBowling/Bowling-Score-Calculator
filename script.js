@@ -134,6 +134,15 @@ let frame6Score = undefined;
 let frame7Score = undefined;
 let frame8Score = undefined;
 let frame9Score = undefined;
+const changeFrame1 = document.getElementById("frame1score");
+const changeFrame2 = document.getElementById("frame2score");
+const changeFrame3 = document.getElementById("frame3score");
+const changeFrame4 = document.getElementById("frame4score");
+const changeFrame5 = document.getElementById("frame5score");
+const changeFrame6 = document.getElementById("frame6score");
+const changeFrame7 = document.getElementById("frame7score");
+const changeFrame8 = document.getElementById("frame8score");
+const changeFrame9 = document.getElementById("frame9score");
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
@@ -300,7 +309,6 @@ function addPins(count){
 		changeFrame(2);
 		frame2Score = score;
 		if (shot1Count === 10){
-			let changeFrame1 = document.getElementById("frame1score");
 			frame1Score += count;
 			changeFrame1.textContent = frame1Score;
 		}
@@ -313,27 +321,22 @@ function addPins(count){
 		changeFrame(3);
 		frame3Score = score;
 		if (shot3Count === 10 && shot1Count !== 10 && shot4Count !== "spare"){
-			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += count;
 			changeFrame2.textContent = frame2Score;
 		} 
 		if (shot3Count === 10 && shot1Count === 10){
 			if (shot === 6){
-				let changeFrame1 = document.getElementById("frame1Score");
 				frame1Score += count;
 				changeFrame1.textContent = frame1Score;
-				let changeFrame2 = document.getElementById("frame2Score");
 				frame2Score += count;
 				changeFrame2.textContent = frame2Score;
 			}
 			if (shot === 7){
-				let changeFrame2 = document.getElementById("frame2Score");
 				frame2Score += count;
 				changeFrame2.textContent = frame2Score;
 			}
 		}
 		if (shot3Count === "spare" && shot === 6){
-			let changeFrame2 = document.getElementById("frame2Score");
 			frame2Score += count;
 			changeFrame2.textContent = frame2Score;
 		}
@@ -342,27 +345,22 @@ function addPins(count){
 		changeFrame(4);
 		frame4Score = score;
 		if (shot5Count === 10 && shot3Count !== 10 && shot6Count !== "spare"){
-			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += count;
 			changeFrame2.textContent = frame2Score;
 		} 
 		if (shot5Count === 10 && shot3Count === 10){
 			if (shot === 8){
-				let changeFrame3 = document.getElementById("frame3Score");
 				frame3Score += count;
 				changeFrame3.textContent = frame3Score;
-				let changeFrame2 = document.getElementById("frame2Score");
 				frame2Score += count;
 				changeFrame2.textContent = frame2Score;
 			}
 			if (shot === 9){
-				let changeFrame3 = document.getElementById("frame3Score");
 				frame3Score += count;
 				changeFrame3.textContent = frame3Score;
 			}
 		}
 		if (shot5Count === "spare" && shot === 8){
-			let changeFrame3 = document.getElementById("frame3Score");
 			frame3Score += count;
 			changeFrame3.textContent = frame3Score;
 		}
@@ -370,27 +368,22 @@ function addPins(count){
 	if (shot ===  10|| shot === 11){
 		changeFrame(5);
 		if (shot7Count === 10 && shot5Count !== 10 && shot8Count !== "spare"){
-			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += count;
 			changeFrame4.textContent = frame4Score;
 		} 
 		if (shot5Count === 10 && shot3Count === 10){
 			if (shot === 10){
-				let changeFrame3 = document.getElementById("frame3Score");
 				frame3Score += count;
 				changeFrame3.textContent = frame3Score;
-				let changeFrame4 = document.getElementById("frame4Score");
 				frame4Score += count;
 				changeFrame4.textContent = frame4Score;
 			}
 			if (shot === 11){
-				let changeFrame4 = document.getElementById("frame4Score");
 				frame4Score += count;
 				changeFrame4.textContent = frame4Score;
 			}
 		}
 		if (shot7Count === "spare" && shot === 10){
-			let changeFrame4 = document.getElementById("frame4Score");
 			frame4Score += count;
 			changeFrame4.textContent = frame4Score;
 		}
@@ -400,27 +393,22 @@ function addPins(count){
 		changeFrame(6);
 		frame6Score = score;
 		if (shot9Count === 10 && shot7Count !== 10 && shot10Count !== "spare"){
-			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += count;
 			changeFrame5.textContent = frame5Score;
 		} 
 		if (shot7Count === 10 && shot5Count === 10){
 			if (shot === 12){
-				let changeFrame5 = document.getElementById("frame5Score");
 				frame5Score += count;
 				changeFrame5.textContent = frame5Score;
-				let changeFrame4 = document.getElementById("frame4Score");
 				frame4Score += count;
 				changeFrame4.textContent = frame4Score;
 			}
 			if (shot === 13){
-				let changeFrame5 = document.getElementById("frame5Score");
 				frame5Score += count;
 				changeFrame5.textContent = frame5Score;
 			}
 		}
 		if (shot9Count === "spare" && shot === 12){
-			let changeFrame5 = document.getElementById("frame5Score");
 			frame5Score += count;
 			changeFrame5.textContent = frame5Score;
 		}
@@ -429,27 +417,22 @@ function addPins(count){
 		changeFrame(7);
 		frame7Score = score;
 		if (shot11Count === 10 && shot9Count !== 10 && shot12Count !== "spare"){
-			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += count;
 			changeFrame6.textContent = frame6Score;
 		} 
 		if (shot9Count === 10 && shot7Count === 10){
 			if (shot === 13){
-				let changeFrame5 = document.getElementById("frame5Score");
 				frame5Score += count;
 				changeFrame5.textContent = frame5Score;
-				let changeFrame6 = document.getElementById("frame6Score");
 				frame6Score += count;
 				changeFrame6.textContent = frame6Score;
 			}
 			if (shot === 14){
-				let changeFrame6 = document.getElementById("frame6Score");
 				frame6Score += count;
 				changeFrame6.textContent = frame5Score;
 			}
 		}
 		if (shot11Count === "spare" && shot === 14){
-			let changeFrame6 = document.getElementById("frame6Score");
 			frame6Score += count;
 			changeFrame6.textContent = frame6Score;
 		}
@@ -457,27 +440,22 @@ function addPins(count){
 	if (shot ===  16|| shot === 17){
 		changeFrame(8);
 		if (shot13Count === 10 && shot11Count !== 10 && shot14Count !== "spare"){
-			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += count;
 			changeFrame7.textContent = frame7Score;
 		} 
 		if (shot11Count === 10 && shot9Count === 10){
 			if (shot === 13){
-				let changeFrame7 = document.getElementById("frame7Score");
 				frame7Score += count;
 				changeFrame7.textContent = frame7Score;
-				let changeFrame6 = document.getElementById("frame6Score");
 				frame6Score += count;
 				changeFrame6.textContent = frame6Score;
 			}
 			if (shot === 14){
-				let changeFrame7 = document.getElementById("frame7Score");
 				frame7Score += count;
 				changeFrame7.textContent = frame7Score;
 			}
 		}
 		if (shot13Count === "spare" && shot === 16){
-			let changeFrame7 = document.getElementById("frame7Score");
 			frame7Score += count;
 			changeFrame7.textContent = frame7Score;
 		}
@@ -487,27 +465,22 @@ function addPins(count){
 		changeFrame(9);
 		frame9Score = score;
 		if (shot15Count === 10 && shot13Count !== 10 && shot16Count !== "spare"){
-			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += count;
 			changeFrame8.textContent = frame8Score;
 		} 
 		if (shot11Count === 10 && shot9Count === 10){
 			if (shot === 13){
-				let changeFrame7 = document.getElementById("frame7Score");
 				frame7Score += count;
 				changeFrame7.textContent = frame7Score;
-				let changeFrame8 = document.getElementById("frame8Score");
 				frame8Score += count;
 				changeFrame8.textContent = frame8Score;
 			}
 			if (shot === 14){
-				let changeFrame8 = document.getElementById("frame8Score");
 				frame8Score += count;
 				changeFrame8.textContent = frame8Score;
 			}
 		}
 		if (shot13Count === "spare" && shot === 16){
-			let changeFrame8 = document.getElementById("frame8Score");
 			frame8Score += count;
 			changeFrame8.textContent = frame8Score;
 		}
@@ -523,7 +496,6 @@ function addPins(count){
 	if (shot === 23){
 		endGame();
 	}
-	console.log("shot1Count: " + shot1Count);
 }
 function addStrike(){
 	if (shot === 22){
@@ -642,7 +614,6 @@ function addStrike(){
 	if (shot === 4 || shot === 5){
 		changeFrame(2);
 		if (shot2Count === "spare" || shot1Count === 10){
-			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 20;
 			frame1Score = 20;
 		}
@@ -653,15 +624,12 @@ function addStrike(){
 	if (shot === 6 || shot === 7){
 		changeFrame(3);
 		if (shot4Count === "spare" || (shot3Count === 10 && shot1Count !== 10)){
-			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
 		}
 		if (shot1Count === 10 && shot3Count === 10){
-			let changeFrame1 = document.getElementById("frame1score");
 			changeFrame1.textContent = 30;
 			frame1Score = 30;
-			let changeFrame2 = document.getElementById("frame2score");
 			changeFrame2.textContent = 50;
 			frame2Score = 50;
 		}
@@ -672,15 +640,12 @@ function addStrike(){
 	if (shot === 8 || shot === 9){
 		changeFrame(4);
 		if (shot6Count === "spare" || (shot5Count === 10 && shot3Count !== 10)){
-			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
 		}
 		if (shot3Count === 10 && shot5Count === 10){
-			let changeFrame2 = document.getElementById("frame2score");
 			frame2Score += 10;
 			changeFrame2.textContent = frame2Score;
-			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 20;
 			changeFrame3.textContent = frame3Score;
 		}
@@ -691,15 +656,12 @@ function addStrike(){
 	if (shot === 11 || shot === 10){
 		changeFrame(5);
 		if (shot8Count === "spare" || (shot7Count === 10 && shot5Count !== 10)){
-			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
 		}
 		if (shot5Count === 10 && shot7Count === 10){
-			let changeFrame3 = document.getElementById("frame3score");
 			frame3Score += 10;
 			changeFrame3.textContent = frame3Score;
-			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 20;
 			changeFrame4.textContent = frame4Score;
 		}
@@ -710,15 +672,12 @@ function addStrike(){
 	if (shot === 12 || shot === 13){
 		changeFrame(6);
 		if (shot10Count === "spare" || (shot9Count === 10 && shot7Count !== 10)){
-			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
 		}
 		if (shot7Count === 10 && shot9Count === 10){
-			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 20;
 			changeFrame5.textContent = frame5Score;
-			let changeFrame4 = document.getElementById("frame4score");
 			frame4Score += 10;
 			changeFrame4.textContent = frame4Score;
 		}
@@ -729,15 +688,12 @@ function addStrike(){
 	if (shot === 14 || shot === 15){
 		changeFrame(7);
 		if (shot12Count === "spare" || (shot11Count === 10 && shot9Count !== 10)){
-			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
 		}
 		if (shot9Count === 10 && shot11Count === 10){
-			let changeFrame5 = document.getElementById("frame5score");
 			frame5Score += 10;
 			changeFrame5.textContent = frame5Score;
-			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 20;
 			changeFrame6.textContent = frame6Score;
 		}
@@ -748,15 +704,12 @@ function addStrike(){
 	if (shot === 16 || shot === 17){
 		changeFrame(8);
 		if (shot14Count === "spare" || (shot13Count === 10 && shot11Count !== 10)){
-			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
 		}
 		if (shot11Count === 10 && shot13Count === 10){
-			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 20;
 			changeFrame7.textContent = frame7Score;
-			let changeFrame6 = document.getElementById("frame6score");
 			frame6Score += 10;
 			changeFrame6.textContent = frame6Score;
 		}
@@ -767,15 +720,12 @@ function addStrike(){
 	if (shot === 18 || shot === 19){
 		changeFrame(9);
 		if (shot16Count === "spare" || (shot15Count === 10 && shot13Count !== 10)){
-			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
 		}
 		if (shot13Count === 10 && shot15Count === 10){
-			let changeFrame7 = document.getElementById("frame7score");
 			frame7Score += 10;
 			changeFrame7.textContent = frame7Score;
-			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 20;
 			changeFrame8.textContent = frame8Score;
 		}
@@ -785,15 +735,12 @@ function addStrike(){
 	}
 	if (shot === 21){
 		if (shot18Count === "spare" || (shot17Count === 10 && shot15Count !== 10)){
-			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
 		}
 		if (shot15Count === 10 && shot17Count === 10){
-			let changeFrame8 = document.getElementById("frame8score");
 			frame8Score += 10;
 			changeFrame8.textContent = frame8Score;
-			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 20;
 			changeFrame9.textContent = frame9Score;
 		}
@@ -803,7 +750,6 @@ function addStrike(){
 	}
 	if (shot === 22){
 		if (shot17Count === 10){
-			let changeFrame9 = document.getElementById("frame9score");
 			frame9Score += 10;
 			changeFrame9.textContent = frame9Score;
 		}
@@ -1094,39 +1040,30 @@ function tenthFrame(shots){
 //DOM manipulation
 function changeFrame(frame){
 	if (frame === 1){
-		let changeFrame1 = document.getElementById("frame1score");
 		changeFrame1.textContent = score;
 	}
 	if (frame === 2){
-		let changeFrame2 = document.getElementById("frame2score");
 		changeFrame2.textContent = score;
 	}
 	if (frame === 3){
-		let changeFrame3 = document.getElementById("frame3score");
 		changeFrame3.textContent = score;
 	}
 	if (frame === 4){
-		let changeFrame4 = document.getElementById("frame4score");
 		changeFrame4.textContent = score;
 	}
 	if (frame === 5){
-		let changeFrame5 = document.getElementById("frame5score");
 		changeFrame5.textContent = score;
 	}
 	if (frame === 6){
-		let changeFrame6 = document.getElementById("frame6score");
 		changeFrame6.textContent = score;
 	}
 	if (frame === 7){
-		let changeFrame7 = document.getElementById("frame7score");
 		changeFrame7.textContent = score;
 	}
 	if (frame === 8){
-		let changeFrame8 = document.getElementById("frame8score");
 		changeFrame8.textContent = score;
 	}
 	if (frame === 9){
-		let changeFrame9 = document.getElementById("frame9score");
 		changeFrame9.textContent = score;
 	}
 }
