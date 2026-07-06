@@ -7,20 +7,20 @@
 <p>This project is open for anybody to use, modify, or build upon.</p>
 <h2>🖼️ Images of example scorecards from this program:</h2>
 <figure>
-  <img width="505" height="74" alt="{3ED58C81-BA20-4A89-886E-39D27FA0E266}" src="https://github.com/user-attachments/assets/4190e350-42b5-4aa9-9a69-c55b13ffa072" />
+  <img width="474" height="55" alt="{CE2DE703-33B8-4F9C-B85C-87BC0C49013B}" src="https://github.com/user-attachments/assets/e8f86e94-979a-4146-b646-8f23a643cb62" />
   <figcaption>Perfect 300 game</figcaption>
 </figure>
 <figure>
-  <img width="504" height="77" alt="{F244A01C-B491-4949-9BA8-502BFD409548}" src="https://github.com/user-attachments/assets/e498f834-3081-4591-92aa-65a63983c95b" />
+  <img width="472" height="62" alt="{6AE132A0-38C3-4F81-AA05-EC73CFCEE60D}" src="https://github.com/user-attachments/assets/5525f191-bc2a-4268-98ba-8f4004d7486f" />
   <figcaption>Dutch 200 (alternating strikes and spares)</figcaption>
 </figure>
 <figure>
-  <img width="506" height="73" alt="{6E554F05-D036-4943-A5DA-1E9AE29E3D75}" src="https://github.com/user-attachments/assets/1f1d092e-c15a-462e-be55-d4b52107049c" />
+  <img width="473" height="57" alt="{88FD60AA-ABD1-4A01-BB81-DDA2F48CB2D4}" src="https://github.com/user-attachments/assets/94857a7b-5c3b-49f0-bdc2-fee9d4716914" />
   <figcaption>Random league game 1 (score: 203)</figcaption>
 </figure>
 <figure>
-  <img width="506" height="75" alt="{5E646660-2D22-47DF-B400-904042A1CD9D}" src="https://github.com/user-attachments/assets/8ff601f5-4fee-4a2e-a368-ec1a59a15a73" />
-  <figcaption>Random league game 2 (score: 224)</figcaption>
+  <img width="470" height="56" alt="{879E442C-37F9-4DCA-93F3-FD502D073726}" src="https://github.com/user-attachments/assets/024068b9-1b66-4c76-b695-e5d4bafbd9d6" />
+  <figcaption>Random league game 2 (score: 243)</figcaption>
 </figure>
 <h2>✨ Features</h2>
 <ul>
