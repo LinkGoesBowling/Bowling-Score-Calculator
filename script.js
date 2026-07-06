@@ -1069,7 +1069,7 @@ function tenthFrame(shots){
 	}
 }
 //end of score calculator
-//DOM manipulation
+/* commented out (wanted to start new project)
 function changeFrame(frame){
 	if (frame === 1){
 		let changeFrame1 = document.getElementById("frame1score");
@@ -1108,7 +1108,8 @@ function changeFrame(frame){
 		changeFrame9.textContent = score;
 	}
 }
-//end of game functions
+*/
+//finish game functions
 function endGame(){
 	allGames.push(score);
 	localStorage.setItem('allGames', allGames);
