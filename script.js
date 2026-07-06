@@ -292,6 +292,7 @@ function addPins(count){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
+	/* Commented out frame score script
 	if (shot === 2 || shot === 3){ //shot counts are 1 higher than they should be because shot++ is triggered before these
 		changeFrame(1);
 		frame1Score = score;
@@ -491,6 +492,7 @@ function addPins(count){
 			changeFrame8.textContent = frame8Score;
 		}
 	}
+	*/
 	if (shot === 23 && shot21Count !== 10 && count === 10 - shot21Count){
 		let changeShot22 = document.getElementById("frame10box2");
 		changeShot22.textContent = "/";
@@ -611,6 +613,7 @@ function addStrike(){
 	}
 	previousShot = 10;
 	strikeButtonPressed = false;
+	/* Commented out frame score script
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
 		frame1Score = 10;
@@ -789,6 +792,7 @@ function addStrike(){
 		changeScore.textContent = score;
 		frame9Score = score;
 	}
+	*/
 	return;
 }
 function addSpare(){
@@ -878,6 +882,7 @@ function addSpare(){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
+	/* Commented out frame score script
 	if (shot === 2 || shot === 3){
 		changeFrame(1);
 		frame1Score = score;
@@ -914,6 +919,7 @@ function addSpare(){
 		changeFrame(9);
 		frame9Score = score;
 	}
+	*/
 }
 function tenthFrame(shots){
 	if (shot21Completed === true){
