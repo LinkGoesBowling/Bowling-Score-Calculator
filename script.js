@@ -324,7 +324,7 @@ function addPins(count){
 				changeFrame1.textContent = frame1Score;
 				let changeFrame2 = document.getElementById("frame2Score");
 				frame2Score += count;
-				changeFrame2.textContent = frame2Score
+				changeFrame2.textContent = frame2Score;
 			}
 			if (shot === 7){
 				let changeFrame2 = document.getElementById("frame2Score");
@@ -523,6 +523,7 @@ function addPins(count){
 	if (shot === 23){
 		endGame();
 	}
+	console.log("shot1Count: " + shot1Count);
 }
 function addStrike(){
 	if (shot === 22){
