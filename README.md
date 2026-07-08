@@ -1,10 +1,6 @@
 # 🎳 Bowling Scores App
 <h2>🌐 Website</h2>
 <p>The project is on this website: <a href="https://linkgoesbowling.github.io/Bowling-Score-Calculator/" target="_blank" rel="noreferrer noopener">https://linkgoesbowling.github.io/Bowling-Score-Calculator/</a></p>
-<h2>📖 About</h2>
-<p>This is my first coding project: a bowling score calculator built in HTML, CSS, and JavaScript. It is a solo project that I created to get hands-on programming experience. AI was not used to program the scoring logic.</p>
-<p>The website calculates the score based on the shots entered and then calculates an average. At the moment, the website's structure is broken because I am working on making it look better, but the JavaScript is completely functional and has accurate scoring. Currently, the data is only there for the active session and is cleared when the page is refreshed. Averages are not shown on the page yet, but the JavaScript calculates them.</p>
-<p>This project is open for anybody to use, modify, or build upon.</p>
 <h2>🖼️ Images of example scorecards from this program:</h2>
 <figure>
   <img width="474" height="55" alt="{CE2DE703-33B8-4F9C-B85C-87BC0C49013B}" src="https://github.com/user-attachments/assets/e8f86e94-979a-4146-b646-8f23a643cb62" />
@@ -22,6 +18,10 @@
   <img width="470" height="56" alt="{879E442C-37F9-4DCA-93F3-FD502D073726}" src="https://github.com/user-attachments/assets/024068b9-1b66-4c76-b695-e5d4bafbd9d6" />
   <figcaption>Random league game 2 (score: 243)</figcaption>
 </figure>
+<h2>📖 About</h2>
+<p>This is my first coding project: a bowling score calculator built in HTML, CSS, and JavaScript. It is a solo project that I created to get hands-on programming experience. AI was not used to program the scoring logic.</p>
+<p>The website calculates the score based on the shots entered and then calculates an average. At the moment, the website's structure is broken because I am working on making it look better, but the JavaScript is completely functional and has accurate scoring. Currently, the data is only there for the active session and is cleared when the page is refreshed. Averages are not shown on the page yet, but the JavaScript calculates them.</p>
+<p>This project is open for anybody to use, modify, or build upon.</p>
 <h2>✨ Features</h2>
 <ul>
   <li>Calculates score from a scorecard</li>
