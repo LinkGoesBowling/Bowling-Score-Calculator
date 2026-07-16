@@ -339,30 +339,30 @@ function tenthFrame(shots){
 		if (doubleStrike === true){
 			score += shots * 3;
 			shot20Count = shots;
-			let changeShot20 = document.getElementById("shot10");
+			let changeShot20 = document.getElementById("shot20");
 			changeShot20.textContent = shots;
 			if (shots === 10){
-				let changeShot20 = document.getElementById("shot10");
+				let changeShot20 = document.getElementById("shot20");
 				changeShot20.textContent = "X";
 			}
 		}
 		if (doubleStrike === false && previousShot !== 10 && previousShot !== "spare"){
 			score += shots;
 			shot20Count = shots;
-			let changeShot20 = document.getElementById("shot10");
+			let changeShot20 = document.getElementById("shot20");
 			changeShot20.textContent = shots;
 			if (shots === 10){
-				let changeShot20 = document.getElementById("shot10");
+				let changeShot20 = document.getElementById("shot20");
 				changeShot20.textContent = "X";
 			}
 		}
 		if (doubleStrike === false && previousShot === 10 || previousShot === "spare"){
 			score += shots * 2;
 			shot20Count = shots;
-			let changeShot20 = document.getElementById("shot10");
+			let changeShot20 = document.getElementById("shot20");
 			changeShot20.textContent = shots;
 			if (shots === 10){
-				let changeShot20 = document.getElementById("shot10");
+				let changeShot20 = document.getElementById("shot20");
 				changeShot20.textContent = "X";
 			}
 		}
