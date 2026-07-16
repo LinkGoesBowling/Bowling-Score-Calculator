@@ -185,11 +185,11 @@ function addPins(count){
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
 	if (shot === 23 && shot21Count !== 10 && count === 10 - shot21Count){
-		let changeShot22 = document.getElementById("frame10box2");
+		let changeShot22 = document.getElementById("shot22");
 		changeShot22.textContent = "/";
 	}
 	if (shot === 22 && shot20Count !== 10 && count === 10 - shot20Count){
-		let changeShot21 = document.getElementById("frame10box1");
+		let changeShot21 = document.getElementById("shot21");
 		changeShot21.textContent = "/";
 	}
 	if (shot === 23){
@@ -216,7 +216,7 @@ function addStrike(){
 	}
 	strikeButtonPressed = true;
 	if (shot === 19 || shot === 20 || shot === 21 || shot === 22){
-	tenthFrame(10);
+		tenthFrame(10);
 	}
 	if (previousShot !== 10){
 		doubleStrike = false;
@@ -267,23 +267,23 @@ function addSpare(){
 	spareButtonPressed = false;
 	for (let i = 1; i <= 18; i++){
 		if (shot === i){
-			window ["shot" + i + "Count"] = count;
+			window ["shot" + i + "Count"] = "/";
 			let changeShot = document.getElementById("shot" + i);
 			changeShot.textContent = window["shot" + i + "Count"];
 		}
 	}
 	if (shot === 21 && shot20Count !== 10){
-		let changeShot21 = document.getElementById("frame10box1");
+		let changeShot21 = document.getElementById("shot21");
 		changeShot21.textContent = "/";
 	}
 	if (shot === 22){
 		if (shot21Count === 10){
-			console.log("That's not a spare situation!");
+			alert("That's not a spare situation!");
 		}
 		else {
 			score += 10 - shot21Count;
 			shot++;
-			let changeShot22 = document.getElementById("frame10box2");
+			let changeShot22 = document.getElementById("shot22");
 			changeShot22.textContent = "/";
 			endGame();
 		}
@@ -304,7 +304,7 @@ function addSpare(){
 	}
 	}
 	else if (shot === 1 || shot === 3 || shot === 5 || shot === 7 || shot === 9 || shot === 11 || shot === 13 || shot === 15 || shot === 17 || shot === 20){
-		console.log("That's the first shot of the frame!");
+		alert("That's the first shot of the frame!");
 	}
 	if (shot === 21) {
 		if (previousShot === 10){
@@ -320,44 +320,6 @@ function addSpare(){
 	}
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = score;
-	/* Commented out frame score script
-	if (shot === 2 || shot === 3){
-		changeFrame(1);
-		frame1Score = score;
-	}
-	if (shot === 5 || shot === 4){
-		changeFrame(2);
-		frame2Score = score;
-	}
-	if (shot ===  6|| shot === 7){
-		changeFrame(3);
-		frame3Score = score;
-	}
-	if (shot ===  8|| shot === 9){
-		changeFrame(4);
-		frame4Score = score;
-	}
-	if (shot ===  10|| shot === 11){
-		changeFrame(5);
-		frame5Score = score;
-	}
-	if (shot ===  12|| shot === 13){
-		changeFrame(6);
-		frame6Score = score;
-	}
-	if (shot ===  14|| shot === 15){
-		changeFrame(7);
-		frame7Score = score;
-	}
-	if (shot === 16 || shot === 17){
-		changeFrame(8);
-		frame8Score = score;
-	}
-	if (shot ===  18|| shot === 19){
-		changeFrame(9);
-		frame9Score = score;
-	}
-	*/
 }
 function tenthFrame(shots){
 	if (shot21Completed === true){
@@ -513,46 +475,6 @@ function tenthFrame(shots){
 	}
 }
 //end of score calculator
-/* commented out (wanted to start new project)
-function changeFrame(frame){
-	if (frame === 1){
-		let changeFrame1 = document.getElementById("frame1score");
-		changeFrame1.textContent = score;
-	}
-	if (frame === 2){
-		let changeFrame2 = document.getElementById("frame2score");
-		changeFrame2.textContent = score;
-	}
-	if (frame === 3){
-		let changeFrame3 = document.getElementById("frame3score");
-		changeFrame3.textContent = score;
-	}
-	if (frame === 4){
-		let changeFrame4 = document.getElementById("frame4score");
-		changeFrame4.textContent = score;
-	}
-	if (frame === 5){
-		let changeFrame5 = document.getElementById("frame5score");
-		changeFrame5.textContent = score;
-	}
-	if (frame === 6){
-		let changeFrame6 = document.getElementById("frame6score");
-		changeFrame6.textContent = score;
-	}
-	if (frame === 7){
-		let changeFrame7 = document.getElementById("frame7score");
-		changeFrame7.textContent = score;
-	}
-	if (frame === 8){
-		let changeFrame8 = document.getElementById("frame8score");
-		changeFrame8.textContent = score;
-	}
-	if (frame === 9){
-		let changeFrame9 = document.getElementById("frame9score");
-		changeFrame9.textContent = score;
-	}
-}
-*/
 //finish game functions
 function endGame(){
 	allGames.push(score);
@@ -579,7 +501,6 @@ function restartGame(){
   	spareButtonPressed = false;
   	shot20Completed = false;
   	shot21Completed = false;
-	resetShot1.textContent = " ";
 	for (let i = 0; i < 22; i++){
 		let resetShot = document.getElementById("shot" + i);
 	}
