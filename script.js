@@ -90,7 +90,7 @@ document.addEventListener("keydown", event => {
 })
 //end of keyboard input script
 //start of score calculator
-for (let i = 0; i < 22; i++){
+for (let i = 1; i <= 22; i++){
 	window["shot" + i + "Count"] = undefined;
 }
 let shot = 1;
@@ -106,15 +106,9 @@ let shot20Completed = false;
 let allGames = [];
 let shot21Completed = false;
 const getGamesFromLocalStorage = localStorage.getItem('allGames');
-let frame1Score = undefined;
-let frame2Score = undefined;
-let frame3Score = undefined;
-let frame4Score = undefined;
-let frame5Score = undefined;
-let frame6Score = undefined;
-let frame7Score = undefined;
-let frame8Score = undefined;
-let frame9Score = undefined;
+for (let i = 1; i <= 9; i++){
+	window["frame" + i + "Score"] = undefined;
+}
 function addPins(count){
 	if (shot === 22){
 		if (previousShot === 10 || previousShot !== 10){ //this executes no matter what, but the script was executing addPins without a button press without this condition
@@ -127,96 +121,11 @@ function addPins(count){
 			return;
 		}
 	}
-			if (shot === 1){
-				shot1Count = count;
-				let changeShot1 = document.getElementById("shot1");
-				changeShot1.textContent = shot1Count;
-			}
-			if (shot === 2){
-				shot2Count = count;
-				let changeShot2 = document.getElementById("frame1box");
-				changeShot2.textContent = shot2Count;
-			}
-			if (shot === 3){
-				shot3Count = count;
-				let changeShot3 = document.getElementById("shot2");
-				changeShot3.textContent = shot3Count;
-			}
-			if (shot === 4){
-				shot4Count = count;
-				let changeShot4 = document.getElementById("frame2box");
-				changeShot4.textContent = shot4Count;
-			}
-			if (shot === 5){
-				shot5Count = count;
-				let changeShot5 = document.getElementById("shot3");
-				changeShot5.textContent = shot5Count;
-			}
-			if (shot === 6){
-				shot6Count = count;
-				let changeShot6 = document.getElementById("frame3box");
-				changeShot6.textContent = shot6Count;
-			}
-			if (shot === 7){
-				shot7Count = count;
-				let changeShot7 = document.getElementById("shot4");
-				changeShot7.textContent = shot7Count;
-			}
-			if (shot === 8){
-				shot8Count = count;
-				let changeShot8 = document.getElementById("frame4box");
-				changeShot8.textContent = shot8Count;
-			}
-			if (shot === 9){
-				shot9Count = count;
-				let changeShot9 = document.getElementById("shot5");
-				changeShot9.textContent = shot9Count;
-			}
-			if(shot === 10){
-				shot10Count = count;
-				let changeShot10 = document.getElementById("frame5box");
-				changeShot10.textContent = shot10Count;
-			}
-			if (shot === 11){
-				shot11Count = count;
-				let changeShot11 = document.getElementById("shot6");
-				changeShot11.textContent = shot11Count;
-			}
-			if (shot === 12) {
-				shot12Count = count;
-				let changeShot12 = document.getElementById("frame6box");
-				changeShot12.textContent = shot12Count;
-			}
-			if (shot === 13){
-				shot13Count = count;
-				let changeShot13 = document.getElementById("shot7");
-				changeShot13.textContent = shot13Count;
-			}
-			if (shot === 14){
-				shot14Count = count;
-				let changeShot14 = document.getElementById("frame7box");
-				changeShot14.textContent = shot14Count;
-			}
-			if (shot === 15){
-				shot15Count = count;
-				let changeShot15 = document.getElementById("shot8");
-				changeShot15.textContent = shot15Count;
-			}
-			if (shot === 16){
-				shot16Count = count;
-				let changeShot16 = document.getElementById("frame8box");
-				changeShot16.textContent = shot16Count;
-			}
-			if (shot === 17){
-				shot17Count = count;
-				let changeShot17 = document.getElementById("shot9");
-				changeShot17.textContent = shot17Count;
-			}
-			if (shot === 18){
-				shot18Count = count;
-				let changeShot18 = document.getElementById("frame9box");
-				changeShot18.textContent = shot18Count;
-			}
+		for (let i = 1; i <= 18; i++){
+			window ["shot" + i + "Count"] = count;
+			let changeShot = document.getElementById("shot" + i);
+			changeShot.textContent = window["shot" + i + "Count"];
+		}
 		if (shot === 19 || shot === 20 || shot === 21){
 			tenthFrame(count);
 		}
@@ -229,7 +138,7 @@ function addPins(count){
 			return;
 		}
 		if (previousShot > 10 - count){
-			console.log("You can't have more than 10 pins in a frame!");
+			alert("You can't have more than 10 pins in a frame!");
 		}
 		else {
 			shot++;
@@ -497,59 +406,11 @@ function addStrike(){
 			return;
 		}
 	}
-	if (shot === 1){
-		let changeShot2 = document.getElementById("frame1box");
-		changeShot2.textContent = "X";
-		shot1Count = 10;
-	}
-	if (shot === 3){
-		let changeShot4 = document.getElementById("frame2box");
-		changeShot4.textContent = "X";
-		shot3Count = 10;
-	}
-	if (shot === 5){
-		let changeShot6 = document.getElementById("frame3box");
-		changeShot6.textContent = "X";
-		shot5Count = 10;
-	}
-	if (shot === 7){
-		let changeShot8 = document.getElementById("frame4box");
-		changeShot8.textContent = "X";
-		shot7Count = 10;
-	}
-	if (shot === 9){
-		let changeShot10 = document.getElementById("frame5box");
-		changeShot10.textContent = "X";
-		shot9Count = 10;
-	}
-	if (shot === 11){
-		let changeShot12 = document.getElementById("frame6box");
-		changeShot12.textContent = "X";
-		shot11Count = 10;
-	}
-	if (shot === 13){
-		let changeShot14 = document.getElementById("frame7box");
-		changeShot14.textContent = "X";
-		shot13Count = 10;
-	}
-	if (shot === 15){
-		let changeShot16 = document.getElementById("frame8box");
-		changeShot16.textContent = "X";
-		shot15Count = 10;
-	}
-	if (shot === 17){
-		let changeShot18 = document.getElementById("frame9box");
-		changeShot18.textContent = "X";
-		shot17Count = 10;
-	}
-	if (shot === 20){
-		let changeShot20 = document.getElementById("shot10");
-		changeShot20.textContent = "X";
-	}
-	if (shot === 21 && shot20Count === 10){
-		let changeShot21 = document.getElementById("frame10box1");
-		changeShot21.textContent = "X";
-	}
+	for (let i = 1; i <= 18; i++){
+			window ["shot" + i + "Count"] = "X";
+			let changeShot = document.getElementById("shot" + i);
+			changeShot.textContent = window["shot" + i + "Count"];
+		}
 	strikeButtonPressed = true;
 	if (shot === 19 || shot === 20 || shot === 21 || shot === 22){
 	tenthFrame(10);
@@ -781,42 +642,11 @@ function addStrike(){
 function addSpare(){
 	spareButtonPressed = true;
 	spareButtonPressed = false;
-	if (shot === 2){
-		let changeShot2 = document.getElementById("frame1box");
-		changeShot2.textContent = "/";
-	}
-	if (shot === 4){
-		let changeShot4 = document.getElementById("frame2box");
-		changeShot4.textContent = "/";
-	}
-	if (shot === 6){
-		let changeShot6 = document.getElementById("frame3box");
-		changeShot6.textContent = "/";
-	}
-	if (shot === 8){
-		let changeShot8 = document.getElementById("frame4box");
-		changeShot8.textContent = "/";
-	}
-	if (shot === 10){
-		let changeShot10 = document.getElementById("frame5box");
-		changeShot10.textContent = "/";
-	}
-	if (shot === 12){
-		let changeShot12 = document.getElementById("frame6box");
-		changeShot12.textContent = "/";
-	}
-	if (shot === 14){
-		let changeShot14 = document.getElementById("frame7box");
-		changeShot14.textContent = "/";
-	}
-	if (shot === 16){
-		let changeShot16 = document.getElementById("frame8box");
-		changeShot16.textContent = "/";
-	}
-	if (shot === 18){
-		let changeShot18 = document.getElementById("frame9box");
-		changeShot18.textContent = "/";
-	}
+	for (let i = 1; i <= 18; i++){
+			window ["shot" + i + "Count"] = count;
+			let changeShot = document.getElementById("shot" + i);
+			changeShot.textContent = window["shot" + i + "Count"];
+		}
 	if (shot === 21 && shot20Count !== 10){
 		let changeShot21 = document.getElementById("frame10box1");
 		changeShot21.textContent = "/";
@@ -1110,28 +940,9 @@ function endGame(){
 function restartGame(){
 	const changeScore = document.getElementById("score");
 	changeScore.textContent = 0;
-	shot1Count = undefined;
-	shot2Count = undefined;
-	shot3Count = undefined;
- 	shot4Count = undefined;
-	shot5Count = undefined;
-	shot6Count = undefined;
-	shot7Count = undefined;
-	shot8Count = undefined;
-	shot9Count = undefined;
-	shot10Count = undefined;
-	shot11Count = undefined;
-	shot12Count = undefined;
-	shot13Count = undefined;
-	shot14Count = undefined;
-	shot15Count = undefined;
-	shot16Count = undefined;
-	shot17Count = undefined;
-	shot18Count = undefined;
-	shot19Count = undefined;
-	shot20Count = undefined;
-	shot21Count = undefined;
-	shot22Count = undefined;
+	for (let i = 0; i < 22; i++){
+		window["shot" + i + "Count"] = undefined;
+	}
   	shot = 1;
 	score = 0;
   	previousShot = 0;
@@ -1143,66 +954,10 @@ function restartGame(){
   	spareButtonPressed = false;
   	shot20Completed = false;
   	shot21Completed = false;
-	let resetShot1 = document.getElementById("shot1");
 	resetShot1.textContent = " ";
-	let resetFrameBox1 = document.getElementById("frame1box");
-	resetFrameBox1.textContent = " ";
-	let resetShot2 = document.getElementById("shot2");
-	resetShot2.textContent = " ";
-	let resetFrameBox2 = document.getElementById("frame2box");
-	resetFrameBox2.textContent = " ";
-	let resetShot3 = document.getElementById("shot3");
-	resetShot3.textContent = " ";
-	let resetFrameBox3 = document.getElementById("frame3box");
-	resetFrameBox3.textContent = " ";
-	let resetShot4 = document.getElementById("shot4");
-	resetShot4.textContent = " ";
-	let resetFrameBox4 = document.getElementById("frame4box");
-	resetFrameBox4.textContent = " ";
-	let resetShot5 = document.getElementById("shot5");
-	resetShot5.textContent = " ";
-	let resetFrameBox5 = document.getElementById("frame5box");
-	resetFrameBox5.textContent = " ";
-	let resetShot6 = document.getElementById("shot6");
-	resetShot6.textContent = " ";
-	let resetFrameBox6 = document.getElementById("frame6box");
-	resetFrameBox6.textContent = " ";
-	let resetShot7 = document.getElementById("shot7");
-	resetShot7.textContent = " ";
-	let resetFrameBox7 = document.getElementById("frame7box");
-	resetFrameBox7.textContent = " ";
-	let resetShot8 = document.getElementById("shot8");
-	resetShot8.textContent = " ";
-	let resetFrameBox8 = document.getElementById("frame8box");
-	resetFrameBox8.textContent = " ";
-	let resetShot9 = document.getElementById("shot9");
-	resetShot9.textContent = " ";
-	let resetFrameBox9 = document.getElementById("frame9box");
-	resetFrameBox9.textContent = " ";
-	let resetShot10 = document.getElementById("shot10");
-	resetShot10.textContent = " ";
-	let reset10Frame1 = document.getElementById("frame10box1");
-	reset10Frame1.textContent = " ";
-	let reset10Frame2 = document.getElementById("frame10box2");
-	reset10Frame2.textContent = " ";
-	let resetFrame1Score = document.getElementById("frame1score");
-	resetFrame1Score.textContent = " ";
-	let resetFrame2Score = document.getElementById("frame2score");
-	resetFrame2Score.textContent = " ";
-	let resetFrame3Score = document.getElementById("frame3score");
-	resetFrame3Score.textContent = " ";
-	let resetFrame4Score = document.getElementById("frame4score");
-	resetFrame4Score.textContent = " ";
-	let resetFrame5Score = document.getElementById("frame5score");
-	resetFrame5Score.textContent = " ";
-	let resetFrame6Score = document.getElementById("frame6score");
-	resetFrame6Score.textContent = " ";
-	let resetFrame7Score = document.getElementById("frame7score");
-	resetFrame7Score.textContent = " ";
-	let resetFrame8Score = document.getElementById("frame8score");
-	resetFrame8Score.textContent = " ";
-	let resetFrame9Score = document.getElementById("frame9score");
-	resetFrame9Score.textContent = " ";
+	for (let i = 0; i < 22; i++){
+		let resetShot = document.getElementById("shot" + i);
+	}
 }
 function calculateAverage(){
 	let pinfallTotal = 0;
