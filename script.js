@@ -90,28 +90,9 @@ document.addEventListener("keydown", event => {
 })
 //end of keyboard input script
 //start of score calculator
-let shot1Count = undefined;
-let shot2Count = undefined;
-let shot3Count = undefined;
-let shot4Count = undefined;
-let shot5Count = undefined;
-let shot6Count = undefined;
-let shot7Count = undefined;
-let shot8Count = undefined;
-let shot9Count = undefined;
-let shot10Count = undefined;
-let shot11Count = undefined;
-let shot12Count = undefined;
-let shot13Count = undefined;
-let shot14Count = undefined;
-let shot15Count = undefined;
-let shot16Count = undefined;
-let shot17Count = undefined;
-let shot18Count = undefined;
-let shot19Count = undefined;
-let shot20Count = undefined;
-let shot21Count = undefined;
-let shot22Count = undefined;
+for (let i = 0; i < 22; i++){
+	let shot + i + count = undefined;
+}
 let shot = 1;
 let score = 0;
 let previousShot = 0;
