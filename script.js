@@ -501,7 +501,7 @@ function restartGame(){
   	spareButtonPressed = false;
   	shot20Completed = false;
   	shot21Completed = false;
-	for (let i = 0; i < 22; i++){
+	for (let i = 1; i <= 22; i++){
 		let resetShot = document.getElementById("shot" + i);
 		resetShot.textContent = " ";
 	}
