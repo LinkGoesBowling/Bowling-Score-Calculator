@@ -501,7 +501,11 @@ function restartGame(){
   	spareButtonPressed = false;
   	shot20Completed = false;
   	shot21Completed = false;
-	for (let i = 1; i <= 22; i++){
+	for (let i = 1; i <= 18; i++){ //skip shot 19 (since it wasn't a thing) and reset the rest of the shots
+		let resetShot = document.getElementById("shot" + i);
+		resetShot.textContent = " ";
+	}
+	for (let i = 20; i <= 22; i++){
 		let resetShot = document.getElementById("shot" + i);
 		resetShot.textContent = " ";
 	}
