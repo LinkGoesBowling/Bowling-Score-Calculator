@@ -91,7 +91,7 @@ document.addEventListener("keydown", event => {
 //end of keyboard input script
 //start of score calculator
 for (let i = 0; i < 22; i++){
-	let shot + i + count = undefined;
+	window["shot" + i + "Count"] = undefined;
 }
 let shot = 1;
 let score = 0;
