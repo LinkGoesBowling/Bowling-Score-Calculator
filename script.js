@@ -115,7 +115,7 @@ function addPins(count){
 			score += count;
 			shot++;
 			shot22Count = count;
-			let changeShot22 = document.getElementById("frame10box2");
+			let changeShot22 = document.getElementById("shot22");
 			changeShot22.textContent = shot22Count;
 			endGame();
 			return;
@@ -201,7 +201,7 @@ function addStrike(){
 		if (previousShot === 10 || previousShot !== 10){
 			score += 10;
 			shot++;
-			let changeShot22 = document.getElementById("frame10box2");
+			let changeShot22 = document.getElementById("shot22");
 			changeShot22.textContent = "X";
 			endGame();
 			return;
@@ -210,7 +210,7 @@ function addStrike(){
 	for (let i = 1; i <= 18; i++){
 		if (shot === i){
 			window ["shot" + i + "Count"] = "X";
-			let changeShot = document.getElementById("shot" + i);
+			let changeShot = document.getElementById("shot" + (i + 1));
 			changeShot.textContent = window["shot" + i + "Count"];
 		}
 	}
@@ -324,7 +324,7 @@ function addSpare(){
 function tenthFrame(shots){
 	if (shot21Completed === true){
 		if (shot === 22 && shots === 10){
-		let changeShot22 = document.getElementById("frame10box2");
+		let changeShot22 = document.getElementById("shot22");
 		changeShot22.textContent = "X";
 	}
 	if (shot === 22 && shots !== 10){
@@ -377,21 +377,21 @@ function tenthFrame(shots){
 	}
 	if (shot === 21){
 		if (shots > 10 - shot20Count && shot20Count !== 10){
-			console.log("You can't hit more than 10 pins in a frame!");
+			alert("You can't hit more than 10 pins in a frame!");
 			return;
 		}
 		if (shots === 10 - shot20Count && shot20Count !== 10){
-			let changeShot21 = document.getElementById("frame10box1");
-			changeShot21.textContent = "/"
+			let changeShot21 = document.getElementById("shot21");
+			changeShot21.textContent = "/";
 		}
 		if (doubleStrike === true && shot20Count === 10){
 			score += shots * 2;
 			shot21Count = shots;
 			shot++;
-			let changeShot21 = document.getElementById("frame10box1");
+			let changeShot21 = document.getElementById("shot21");
 			changeShot21.textContent = shots;
 			if (shots === 10){
-				let changeShot21 = document.getElementById("frame10box1");
+				let changeShot21 = document.getElementById("shot21");
 				changeShot21.textContent = "X";
 			}
 		}
@@ -399,10 +399,10 @@ function tenthFrame(shots){
 			score += shots;
 			shot21Count = shots;
 			shot++;
-			let changeShot21 = document.getElementById("frame10box1");
+			let changeShot21 = document.getElementById("shot21");
 			changeShot21.textContent = shots;
 			if (shots === 10){
-				let changeShot21 = document.getElementById("frame10box1");
+				let changeShot21 = document.getElementById("shot21");
 				changeShot21.textContent = "X";
 			}
 			if (shots < 10 - shot20Count){
@@ -422,10 +422,10 @@ function tenthFrame(shots){
 					score += shots;
 					shot21Count = shots;
 					shot++;
-					let changeShot21 = document.getElementById("frame10box1");
+					let changeShot21 = document.getElementById("shot21");
 					changeShot21.textContent = shots;
 					if (shots === 10){
-						let changeShot21 = document.getElementById("frame10box1");
+						let changeShot21 = document.getElementById("shot21");
 						changeShot21.textContent = "X";
 					}
 				}
@@ -434,20 +434,20 @@ function tenthFrame(shots){
 				if (shot17Count !== 10){
 					score += shots;
 					shot21Count = shots;
-					let changeShot21 = document.getElementById("frame10box1");
+					let changeShot21 = document.getElementById("shot21");
 					changeShot21.textContent = shots;
 					if (shots === 10){
-						let changeShot21 = document.getElementById("frame10box1");
+						let changeShot21 = document.getElementById("shot21");
 						changeShot21.textContent = "X";
 					}
 				}
 				if (shot17Count === 10){
 					score += shots * 2;
 					shot21Count = shots;
-					let changeShot21 = document.getElementById("frame10box1");
+					let changeShot21 = document.getElementById("shot21");
 					changeShot21.textContent = shots;
 					if (shots === 10){
-						let changeShot21 = document.getElementById("frame10box1");
+						let changeShot21 = document.getElementById("shot21");
 						changeShot21.textContent = "X";
 					}
 				}
