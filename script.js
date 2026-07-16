@@ -503,6 +503,7 @@ function restartGame(){
   	shot21Completed = false;
 	for (let i = 0; i < 22; i++){
 		let resetShot = document.getElementById("shot" + i);
+		resetShot.textContent = " ";
 	}
 }
 function calculateAverage(){
