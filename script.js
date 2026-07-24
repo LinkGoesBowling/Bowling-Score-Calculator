@@ -10,13 +10,6 @@ you get 3 strikes in the 10th frame and a spare in the 9th, the 9th and 10th fra
 Then after those 20 pins in the 9th frame, there would be 30 pins added from the 10th frame since the 10th frame strikes do not double anything.
 */
 //start of keyboard input script
-let keyPress = 0;
-function getCurrentKeyPress(e){
-	if (window.event){
-		keyPress = e.keyCode;
-		console.log(keyPress);
-	}
-}
 document.addEventListener("keydown", event => {
 	if (event.isComposing || event.keyCode !== 189){
 		return;
@@ -24,10 +17,7 @@ document.addEventListener("keydown", event => {
 	addPins(0);
 })
 document.addEventListener("keydown", event => {
-	if (event.isComposing || event.keyCode !== keyPress){
-		return;
-	}
-	addPins(48 - keyPress);
+	addPins(event.keyCode - 48);
 })
 document.addEventListener("keydown", event => {
 	if (event.isComposing || event.keyCode !== 88){
