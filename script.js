@@ -17,7 +17,9 @@ document.addEventListener("keydown", event => {
 	addPins(0);
 })
 document.addEventListener("keydown", event => {
-	addPins(event.keyCode - 48);
+	if (event.keyCode >= 48 && event.keyCode <= 57){ //only allow for 0-9
+		addPins(event.keyCode - 48);
+	}
 })
 document.addEventListener("keydown", event => {
 	if (event.isComposing || event.keyCode !== 88){
