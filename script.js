@@ -13,7 +13,8 @@ Then after those 20 pins in the 9th frame, there would be 30 pins added from the
 let keyPress = 0;
 function getCurrentKeyPress(e){
 	if (window.event){
-		keyPress = e.keyCode
+		keyPress = e.keyCode;
+		console.log(keyPress);
 	}
 }
 document.addEventListener("keydown", event => {
